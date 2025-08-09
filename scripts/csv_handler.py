@@ -294,6 +294,8 @@ def create_sample_csv_content() -> str:
     
     sample_df = pd.DataFrame(sample_data)
     return sample_df.to_csv(index=False)
+
+def validate_and_preview_data(uploaded_file) -> Tuple[bool, pd.DataFrame, str]:
     """
     Validate uploaded file and return preview
     Returns (success, dataframe, message)
