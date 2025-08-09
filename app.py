@@ -21,7 +21,8 @@ from csv_handler import (
     validate_csv_format, 
     process_uploaded_data,
     create_data_info_panel,
-    validate_and_preview_data
+    validate_and_preview_data,
+    diagnose_csv_issues
 )
 
 def generate_sample_players(num_players: int) -> Dict:
@@ -319,6 +320,33 @@ if data_source == "📊 Upload Custom CSV":
             st.sidebar.markdown(file_info)
         else:
             st.sidebar.error(message)
+            
+            # Show diagnostic information for failed parsing
+            with st.sidebar.expander("🔍 CSV Diagnostic Information", expanded=True):
+                diagnostic_info = diagnose_csv_issues(uploaded_file)
+                st.markdown(diagnostic_info)
+                
+                st.markdown("---")
+                st.markdown("""
+                **🚨 Common Solutions:**
+                1. **Wrong Separator**: Save as CSV with comma (,) separators
+                2. **Excel Format**: Choose "CSV (Comma delimited)" when saving
+                3. **Encoding**: Save as "CSV UTF-8" format
+                4. **Special Characters**: Remove or replace special characters
+                5. **Extra Columns**: Remove empty columns in Excel before saving
+                """)
+                
+                # Quick fix suggestions
+                if "Too few fields" in message:
+                    st.warning("🔧 **Quick Fix**: Your file might be using semicolons (;) instead of commas (,). Try opening in Excel and saving as 'CSV (Comma delimited)'")
+            
+            # Still show file info even if parsing failed
+            file_info = f"""
+            **📄 File Info:**
+            - **Name:** {uploaded_file.name}
+            - **Size:** {uploaded_file.size} bytes
+            """
+            st.sidebar.markdown(file_info)
 
 st.sidebar.markdown("---")
 
