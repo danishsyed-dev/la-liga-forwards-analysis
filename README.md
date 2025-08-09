@@ -1,85 +1,158 @@
 # La Liga Forwards Analysis
 
-This project analyzes the greatest forwards in La Liga history using Python scripts. It includes statistical analysis and visualizations like bar charts and radar diagrams.
+This project analyzes the greatest forwards in La Liga history using Python scripts and an interactive web dashboard. It includes statistical analysis and visualizations like bar charts and radar diagrams.
 
-## Table of Contents
+## 🌟 Features
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Workflow](#workflow)
-- [Project Structure](#project-structure)
-- [Files Included](#files-included)
-- [License](#license)
+- **Interactive Web Dashboard**: Explore data through an interactive Streamlit app
+- **Comprehensive Scoring System**: Custom points system based on goals, assists, titles, and awards
+- **Multiple Visualizations**: Bar charts, radar charts, scatter plots, and detailed statistics
+- **Season-by-Season Analysis**: Deep dive into individual player performances
+- **Real-time Comparisons**: Compare multiple players side-by-side
 
-## Introduction
+## 🚀 Quick Start - Web App
 
-The project compares legendary players based on goals, assists, titles, and awards, using custom scoring systems and visualizations.
+### Run Locally
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-## Features
+# Run the web app
+streamlit run app.py
+```
 
-- Calculate player scores using a custom points system.
-- Generate bar charts comparing player scores.
-- Create radar diagrams to visualize player stats across multiple metrics.
+**Alternative:**
+- Windows: Double-click `run_app.bat`
+- Linux/Mac: Run `./run_app.sh`
 
-## Installation
+The app will open at `http://localhost:8501`
+
+## 📊 Live Demo
+
+🔗 **[Access Live Dashboard](https://la-liga-forwards-analysis.streamlit.app)** *(Coming soon)*
+
+## 🛠️ Installation
 
 **Prerequisites:**
-
-- Python 3.x installed on your computer.
-- Libraries: `pandas`, `numpy`, `matplotlib`.
+- Python 3.7+ installed on your computer
+- Libraries: `pandas`, `numpy`, `matplotlib`, `streamlit`, `plotly`
 
 **Install Required Libraries:**
-
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
+## 💻 Usage
 
-Your analysis is split into modular Python scripts in the `scripts/` folder. 
-Each script was originally a Jupyter notebook cell, now converted for easier version control and reproducibility.
+### Web Dashboard (Recommended)
+1. Run `streamlit run app.py`
+2. Open your browser to `http://localhost:8501`
+3. Use the sidebar controls to:
+   - Select players to compare
+   - Choose visualization types
+   - Explore different metrics
+
+### Command Line Scripts
+Your analysis is split into modular Python scripts in the `scripts/` folder.
 
 **To run all scripts in order:**
 ```bash
-python scripts/01_load_data.py
-python scripts/02_calculate_scores.py
-python scripts/03_visualize_barcharts.py
-python scripts/04_visualize_radar.py
-# ...and so on
+python scripts/main.py
 ```
-Alternatively, create a `main.py` or bash script to automate this sequence.
 
-**Viewing Outputs:**
-- Plots and tables are saved in the `outputs/` folder.
-- Example: `outputs/player_scores_bar.png`, `outputs/radar_chart.png`
+**Or run individually:**
+```bash
+python scripts/players_data.py
+python scripts/players_scores.py
+python scripts/bar_chart.py
+python scripts/radar_diagram.py
+```
 
-## Workflow
+## 🎯 Interactive Features
 
-- Original analysis was performed in Jupyter notebooks for inline visualization.
-- For better version control, each notebook cell is now a standalone `.py` script.
-- Visual outputs are saved to disk (see `outputs/`) and can be referenced or previewed in the README.
+- **Player Selection**: Choose which players to analyze and compare
+- **Visualization Types**: 
+  - Bar charts for overall rankings
+  - Radar charts for multi-dimensional comparison  
+  - Detailed statistics with scatter plots
+  - Season-by-season performance analysis
+- **Real-time Updates**: All charts update instantly based on your selections
+- **Export Options**: Save charts and download data
 
-## Project Structure
+## 📈 Deployment
+
+### Streamlit Cloud (Free)
+1. Fork this repository
+2. Go to [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub account
+4. Deploy from your forked repository
+5. Set the main file path to `app.py`
+
+### Other Platforms
+- **Heroku**: Use the included `Procfile`
+- **Railway**: Deploy directly from GitHub
+- **Replit**: Import repository and run
+
+## 🏗️ Project Structure
 
 ```
 la-liga-forwards-analysis/
-├── data/         # datasets, CSVs, raw or processed
-├── scripts/      # analysis scripts (one per original notebook cell)
-├── outputs/      # generated plots, tables, etc.
-├── requirements.txt
-└── README.md
+├── app.py              # Main Streamlit web application
+├── scripts/            # Analysis scripts
+│   ├── players_data.py # Player data and scoring system
+│   ├── analysis.py     # Scoring calculation functions
+│   ├── players_scores.py # Score computation
+│   ├── bar_chart.py    # Bar chart generation
+│   ├── radar_diagram.py # Radar chart generation
+│   └── main.py         # Script runner
+├── outputs/            # Generated plots and data
+├── .streamlit/         # Streamlit configuration
+├── requirements.txt    # Python dependencies
+├── run_app.bat        # Windows launcher
+├── run_app.sh         # Linux/Mac launcher
+└── README.md          # This file
 ```
 
-## Files Included
+## 📊 Scoring System
 
-- `scripts/`: All analysis code
-- `data/`: Data files (not included in repo if too large)
-- `outputs/`: Example plots and result tables
-- `requirements.txt`: Dependencies
-- `README.md`
+The analysis uses a comprehensive points system:
 
-## License
+| Achievement | Points |
+|------------|--------|
+| Ballon d'Or Win | 5 |
+| Champions League Win | 5 |
+| CL Top Scorer | 5 |
+| La Liga Best Player Award | 4 |
+| La Liga Golden Boot | 3 |
+| 200+ La Liga Goals | 5 |
+| 20+ Goal La Liga Season | 2 |
+| Most Assists in La Liga | 2 |
+| 100+ La Liga Goals | 2 |
+| La Liga Title | 1 |
+| 10+ Assist La Liga Season | 1 |
+| Cup Final Winner | 1 |
+| Other Trophies | 1 |
 
-MIT License
+## 🎮 How to Use the Web App
+
+1. **Select Players**: Use the sidebar to choose which players to compare
+2. **Choose Visualization**: Pick from Bar Chart, Radar Chart, Detailed Stats, or Season Analysis
+3. **Explore Data**: Click on different elements to see detailed information
+4. **Compare Players**: Select multiple players to see side-by-side comparisons
+5. **Season Analysis**: Deep dive into individual player's season-by-season performance
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
+
+## 📄 License
+
+MIT License - see LICENSE file for details
+
+---
+
+**🚀 Ready to explore? Run `streamlit run app.py` and discover the greatest La Liga forwards!**

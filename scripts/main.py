@@ -1,11 +1,11 @@
 import subprocess
 
 scripts = [
-    "01_players_data.py",
-    "02_players_score.py",
-    "03_analysis.py",
-    "04_bar_charts.py",
-    "05_radar_diagram.py",
+    "players_data.py",
+    "players_scores.py",
+    "analysis.py",
+    "bar_chart.py",
+    "radar_diagram.py",
     # Add more scripts as needed
 ]
 
