@@ -1,6 +1,10 @@
 import pandas as pd
+import os
 from players_data import players, points_system
 from analysis import calculate_player_score
+
+# Ensure outputs directory exists
+os.makedirs('../outputs', exist_ok=True)
 
 player_scores = {}
 for player_name, data in players.items():
@@ -15,4 +19,4 @@ scores_df.sort_values(by='Score', ascending=False, inplace=True)
 print(scores_df)
 
 # Save to CSV for use in other scripts
-scores_df.to_csv('outputs/player_scores.csv', index=False)
+scores_df.to_csv('../outputs/player_scores.csv', index=False)

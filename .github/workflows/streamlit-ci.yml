@@ -25,13 +25,17 @@ jobs:
         
     - name: Test analysis scripts
       run: |
-        cd scripts
-        python main.py
+        # Test that data files can be imported
+        python -c "from scripts.players_data import players, points_system; print(f'✅ Loaded {len(players)} players')"
+        python -c "from scripts.analysis import calculate_player_score; print('✅ Analysis functions loaded')"
+        
+        # Run the main analysis pipeline
+        python scripts/main.py
         
     - name: Test Streamlit app
       run: |
         # Test that the app can be imported without errors
-        python -c "import sys; sys.path.append('.'); import app"
+        python -c "import sys; sys.path.append('.'); import app; print('✅ Streamlit app imports successfully')"
         
     - name: Generate static version
       run: |
