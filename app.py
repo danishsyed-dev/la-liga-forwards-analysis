@@ -16,22 +16,86 @@ from analysis import calculate_player_score
 
 # Configure page
 st.set_page_config(
-    page_title="La Liga Forwards Analysis",
+    page_title="La Liga Greatest Forwards Analysis",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Title and description
-st.title("⚽ La Liga Greatest Forwards Analysis")
+# Custom CSS for better styling
 st.markdown("""
-This interactive dashboard analyzes the greatest forwards in La Liga history using a comprehensive scoring system 
-that considers goals, assists, titles, awards, and individual achievements.
-""")
+<style>
+    /* Main title styling */
+    .main-title {
+        text-align: center;
+        color: #1f77b4;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Subtitle styling */
+    .subtitle {
+        text-align: center;
+        color: #666;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+    }
+    
+    /* Metric cards */
+    .metric-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1.5rem;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    /* Chart containers */
+    .chart-container {
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+    
+    /* Sidebar styling */
+    .sidebar .sidebar-content {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    /* Custom info boxes */
+    .info-box {
+        background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-# Sidebar
-st.sidebar.header("🔧 Controls")
-st.sidebar.markdown("Use the controls below to customize your analysis:")
+# Enhanced title section
+st.markdown("""
+<div class="main-title">
+    ⚽ La Liga Greatest Forwards Analysis
+</div>
+<div class="subtitle">
+    Comprehensive data-driven analysis of the greatest forwards in La Liga history using advanced scoring metrics
+</div>
+""", unsafe_allow_html=True)
+
+# Enhanced sidebar
+st.sidebar.markdown("""
+<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #1f77b4, #ff7f0e); color: white; border-radius: 10px; margin-bottom: 1rem;">
+    <h3>🎛️ Analysis Controls</h3>
+    <p>Customize your exploration of La Liga's greatest forwards</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Calculate scores
 @st.cache_data
