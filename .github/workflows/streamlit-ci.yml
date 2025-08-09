@@ -1,4 +1,4 @@
-name: Streamlit App CI
+name: CI Tests
 
 on:
   push:
@@ -23,28 +23,30 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Test analysis scripts
+    - name: Test data imports
       run: |
-        # Test that data files can be imported
         python -c "from scripts.players_data import players, points_system; print(f'✅ Loaded {len(players)} players')"
         python -c "from scripts.analysis import calculate_player_score; print('✅ Analysis functions loaded')"
         
-        # Run the main analysis pipeline
+    - name: Test analysis pipeline
+      run: |
         python scripts/main.py
+        ls -la outputs/
         
     - name: Test Streamlit app
       run: |
-        # Test that the app can be imported without errors
         python -c "import sys; sys.path.append('.'); import app; print('✅ Streamlit app imports successfully')"
         
-    - name: Generate static version
+    - name: Test static site generation
       run: |
         python generate_static.py
+        ls -la docs/
         
-    - name: Archive analysis outputs
+    - name: Archive test outputs
       uses: actions/upload-artifact@v4
       with:
-        name: analysis-outputs
+        name: test-outputs
         path: |
           outputs/
           docs/
+        retention-days: 7
