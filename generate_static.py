@@ -566,6 +566,59 @@ def generate_html_page():
         </div>
     </div>
 
+    <!-- CSV Upload Section -->
+    <div class="container mb-5" id="upload-section" style="display: none;">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-primary">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0"><i class="fas fa-upload me-2"></i>Upload Your Own Data</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="csvFile" class="form-label">
+                                <i class="fas fa-upload me-2"></i>Upload Your CSV Data
+                            </label>
+                            <input type="file" class="form-control" id="csvFile" accept=".csv">
+                            <div class="form-text">
+                                Upload a CSV file with player statistics. 
+                                <a href="#" id="downloadTemplate" class="text-decoration-none">
+                                    <i class="fas fa-download me-1"></i>Download template
+                                </a> | 
+                                <a href="#" id="downloadSimpleTemplate" class="text-decoration-none">
+                                    <i class="fas fa-file-csv me-1"></i>Simple template
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-success" id="analyzeBtn" disabled>
+                                    <i class="fas fa-chart-line me-2"></i>Analyze Data
+                                </button>
+                                <button type="button" class="btn btn-secondary ms-2" id="resetBtn">
+                                    <i class="fas fa-refresh me-2"></i>Use Default Data
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="uploadStatus" class="alert" role="alert" style="display: none;"></div>
+                            </div>
+                        </div>
+                        <div id="dataPreview" style="display: none;">
+                            <hr>
+                            <h6>Data Preview:</h6>
+                            <div class="table-responsive">
+                                <table class="table table-sm" id="previewTable">
+                                    <thead></thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container" id="rankings">
         <div class="row">
             <div class="col-12">
@@ -766,14 +819,183 @@ def generate_html_page():
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script>
+        // CSV Templates
+        const csvTemplates = {{
+            standard: `player_name,career_goals,total_la_liga_titles,total_champions_league_titles,ballon_dor_wins,season_1_goals,season_1_assists,season_1_awards,season_1_team_achievements
+Example Player 1,250,3,2,1,35,12,"La Liga Golden Boot,La Liga Best Player Award","La Liga Title,Copa del Rey"
+Example Player 2,180,1,0,0,25,8,"","Copa del Rey"
+Your Player Name,150,1,1,0,30,10,"La Liga Golden Boot","La Liga Title"`,
+            
+            simple: `player_name,career_goals,total_la_liga_titles,total_champions_league_titles,ballon_dor_wins,notes
+Lionel Messi Example,474,10,4,4,Barcelona Legend
+Cristiano Ronaldo Example,311,2,4,4,Real Madrid Legend  
+Your Player Name,150,1,0,0,Add your notes here`
+        }};
+        
+        // Download template functionality
+        document.getElementById('downloadTemplate').addEventListener('click', function(e) {{
+            e.preventDefault();
+            downloadCSV(csvTemplates.standard, 'player_data_template.csv');
+        }});
+        
+        document.getElementById('downloadSimpleTemplate').addEventListener('click', function(e) {{
+            e.preventDefault();
+            downloadCSV(csvTemplates.simple, 'simple_player_template.csv');
+        }});
+        
+        function downloadCSV(content, filename) {{
+            const blob = new Blob([content], {{ type: 'text/csv;charset=utf-8;' }});
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', filename);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }}
+        
+        // CSV Upload handling
+        document.getElementById('csvFile').addEventListener('change', function(e) {{
+            const file = e.target.files[0];
+            if (file) {{
+                const reader = new FileReader();
+                reader.onload = function(e) {{
+                    try {{
+                        const csv = e.target.result;
+                        Papa.parse(csv, {{
+                            header: true,
+                            complete: function(results) {{
+                                if (results.errors.length > 0) {{
+                                    showUploadStatus('Error parsing CSV: ' + results.errors[0].message, 'danger');
+                                    return;
+                                }}
+                                
+                                const data = results.data.filter(row => row.player_name && row.player_name.trim());
+                                
+                                if (data.length === 0) {{
+                                    showUploadStatus('No valid player data found in CSV', 'warning');
+                                    return;
+                                }}
+                                
+                                // Validate required columns
+                                const requiredCols = ['player_name', 'career_goals'];
+                                const missingCols = requiredCols.filter(col => !results.meta.fields.includes(col));
+                                
+                                if (missingCols.length > 0) {{
+                                    showUploadStatus('Missing required columns: ' + missingCols.join(', '), 'danger');
+                                    return;
+                                }}
+                                
+                                showUploadStatus(`Successfully loaded ${{data.length}} players from ${{file.name}}`, 'success');
+                                showDataPreview(data, file);
+                                document.getElementById('analyzeBtn').disabled = false;
+                                
+                                // Store data for analysis
+                                window.uploadedData = data;
+                                
+                            }}
+                        }});
+                    }} catch (error) {{
+                        showUploadStatus('Error reading file: ' + error.message, 'danger');
+                    }}
+                }};
+                reader.readAsText(file);
+            }}
+        }});
+        
+        function showUploadStatus(message, type) {{
+            const statusDiv = document.getElementById('uploadStatus');
+            statusDiv.className = `alert alert-${{type}}`;
+            statusDiv.innerHTML = `<i class="fas fa-${{type === 'success' ? 'check-circle' : type === 'warning' ? 'exclamation-triangle' : 'times-circle'}} me-2"></i>${{message}}`;
+            statusDiv.style.display = 'block';
+        }}
+        
+        function showDataPreview(data, file) {{
+            const previewDiv = document.getElementById('dataPreview');
+            const tableContainer = previewDiv.querySelector('#previewTable') || previewDiv;
+            
+            // Create preview table
+            let tableHTML = `
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">
+                            <i class="fas fa-eye me-2"></i>Data Preview
+                            <small class="text-muted">(${{Math.min(data.length, 3)}} of ${{data.length}} players shown)</small>
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm table-striped">
+                                <thead class="table-dark">
+                                    <tr>`;
+            
+            // Add headers
+            Object.keys(data[0]).forEach(key => {{
+                tableHTML += `<th>${{key.replace(/_/g, ' ').toUpperCase()}}</th>`;
+            }});
+            tableHTML += `</tr></thead><tbody>`;
+            
+            // Add first 3 rows
+            data.slice(0, 3).forEach(row => {{
+                tableHTML += '<tr>';
+                Object.values(row).forEach(value => {{
+                    const displayValue = value ? String(value).substring(0, 50) : '-';
+                    tableHTML += `<td>${{displayValue}}${{value && String(value).length > 50 ? '...' : ''}}</td>`;
+                }});
+                tableHTML += '</tr>';
+            }});
+            
+            tableHTML += `</tbody></table>
+                        </div>
+                        <div class="mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle me-1"></i>
+                                <strong>File:</strong> ${{file.name}} (${{Math.round(file.size / 1024)}} KB) |
+                                <strong>Players:</strong> ${{data.length}} |
+                                <strong>Columns:</strong> ${{Object.keys(data[0]).length}}
+                            </small>
+                        </div>
+                    </div>
+                </div>`;
+            
+            tableContainer.innerHTML = tableHTML;
+            previewDiv.style.display = 'block';
+        }}
+        
+        // Reset functionality
+        document.getElementById('resetBtn').addEventListener('click', function() {{
+            document.getElementById('csvFile').value = '';
+            document.getElementById('uploadStatus').style.display = 'none';
+            document.getElementById('dataPreview').style.display = 'none';
+            document.getElementById('analyzeBtn').disabled = true;
+            window.uploadedData = null;
+            
+            // Hide upload section and show default analysis
+            document.getElementById('upload-section').style.display = 'none';
+            document.querySelector('.container:not(#upload-section)').style.display = 'block';
+        }});
+        
+        // Analyze uploaded data
+        document.getElementById('analyzeBtn').addEventListener('click', function() {{
+            if (window.uploadedData) {{
+                alert('Analysis feature coming soon! For now, please use the Streamlit app for full analysis of uploaded data.');
+                // Future: Process uploaded data and regenerate charts
+            }}
+        }});
+        
         // Smooth scrolling for navbar links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {{
             anchor.addEventListener('click', function (e) {{
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({{
-                    behavior: 'smooth'
-                }});
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {{
+                    target.scrollIntoView({{
+                        behavior: 'smooth'
+                    }});
+                }}
             }});
         }});
         
@@ -790,6 +1012,24 @@ def generate_html_page():
                 }}, 200);
             }});
         }});
+        
+        // Show upload section button
+        const showUploadBtn = document.createElement('button');
+        showUploadBtn.className = 'btn btn-outline-primary btn-sm';
+        showUploadBtn.innerHTML = '<i class="fas fa-upload me-2"></i>Upload Your Data';
+        showUploadBtn.onclick = function() {{
+            document.getElementById('upload-section').style.display = 'block';
+            this.style.display = 'none';
+        }};
+        
+        // Add upload button to navbar
+        const navbar = document.querySelector('.navbar-nav');
+        if (navbar) {{
+            const li = document.createElement('li');
+            li.className = 'nav-item';
+            li.appendChild(showUploadBtn);
+            navbar.appendChild(li);
+        }}
     </script>
 </body>
 </html>

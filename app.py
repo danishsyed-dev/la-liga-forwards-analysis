@@ -7,12 +7,88 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import sys
 import os
+from typing import Dict
 
 # Add scripts directory to path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
 
 from players_data import players, points_system
 from analysis import calculate_player_score
+from csv_handler import (
+    create_csv_template, 
+    create_simple_template,
+    create_sample_csv_content,
+    validate_csv_format, 
+    process_uploaded_data,
+    create_data_info_panel,
+    validate_and_preview_data
+)
+
+def generate_sample_players(num_players: int) -> Dict:
+    """Generate sample players for testing"""
+    import random
+    
+    sample_names = [
+        "Alex Rodriguez", "Marco Silva", "Diego Martinez", "Carlos Fernandez", 
+        "Juan Lopez", "Antonio Garcia", "Fernando Torres", "Miguel Angel",
+        "Roberto Carlos", "Paulo Dybala", "Sergio Aguero", "Eden Hazard",
+        "Luka Modric", "Kevin De Bruyne", "Sadio Mane"
+    ]
+    
+    sample_players = {}
+    
+    for i in range(num_players):
+        player_name = sample_names[i] if i < len(sample_names) else f"Sample Player {i+1}"
+        
+        # Generate realistic random stats
+        career_goals = random.randint(80, 350)
+        la_liga_titles = random.randint(0, 6)
+        cl_titles = random.randint(0, 4)
+        ballon_dor = random.randint(0, 2)
+        
+        # Generate seasons
+        seasons = []
+        for j in range(3):
+            season_goals = random.randint(15, 45)
+            season_assists = random.randint(3, 20)
+            
+            # Awards based on performance
+            awards = []
+            if season_goals >= 30:
+                awards.append('La Liga Golden Boot')
+            if season_goals >= 25:
+                awards.append('La Liga Best Player Award')
+            if ballon_dor > 0 and j == 0:
+                awards.append('Ballon d\'Or Win')
+                
+            # Team achievements
+            team_achievements = []
+            if random.random() > 0.5:
+                team_achievements.append('La Liga Title')
+            if random.random() > 0.7:
+                team_achievements.append('Champions League Win')
+            if random.random() > 0.6:
+                team_achievements.append('Copa del Rey')
+            
+            seasons.append({
+                'season': f'{2020+j}/{2021+j}',
+                'goals': season_goals,
+                'assists': season_assists,
+                'awards': awards,
+                'team_achievements': team_achievements,
+                'cup_final_winner': 'Copa del Rey' in team_achievements,
+                'cl_achievements': ['CL Top Scorer'] if season_goals >= 25 and 'Champions League Win' in team_achievements else []
+            })
+        
+        sample_players[player_name] = {
+            'career_goals': career_goals,
+            'seasons': seasons,
+            'career_awards': ['Ballon d\'Or Win'] * ballon_dor,
+            'total_la_liga_titles': la_liga_titles,
+            'total_champions_league_titles': cl_titles
+        }
+    
+    return sample_players
 
 # Configure page
 st.set_page_config(
@@ -97,13 +173,165 @@ st.sidebar.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Show data format guide if requested
+if st.session_state.get('show_guide', False):
+    st.markdown("## 📖 CSV Data Format Guide")
+    create_data_info_panel()
+    
+    # Add example section
+    st.markdown("### 🎯 Quick Start Examples")
+    
+    tab1, tab2, tab3 = st.tabs(["📋 Standard Format", "🎲 Generate Sample", "💡 Tips & Tricks"])
+    
+    with tab1:
+        st.markdown("""
+        **Required Columns:**
+        - `player_name` - Full name of the player
+        - `career_goals` - Total career goals (number)
+        - `total_la_liga_titles` - Number of league titles
+        - `total_champions_league_titles` - Number of CL titles
+        
+        **Optional Columns for Better Analysis:**
+        - `ballon_dor_wins` - Number of Ballon d'Or awards
+        - `season_1_goals`, `season_2_goals`, `season_3_goals`
+        - `season_1_assists`, `season_2_assists`, `season_3_assists`
+        - `season_1_awards` (comma-separated list)
+        """)
+        
+    with tab2:
+        st.markdown("**🎲 Generate sample data to see how it works:**")
+        if st.button("🎯 Create Sample CSV"):
+            sample_csv = create_sample_csv_content()
+            st.download_button(
+                label="📥 Download Sample Data",
+                data=sample_csv,
+                file_name="sample_players.csv",
+                mime="text/csv"
+            )
+            st.success("✅ Sample data generated! Download and upload it to see the analysis.")
+            
+    with tab3:
+        st.markdown("""
+        **💡 Pro Tips:**
+        
+        1. **Excel Users**: Save as CSV (UTF-8) format
+        2. **Awards**: Use exact names like 'Ballon d'Or Win', 'La Liga Golden Boot'
+        3. **Multiple Awards**: Separate with commas: 'Award1,Award2,Award3'
+        4. **Missing Data**: Leave cells empty or use 0 for numbers
+        5. **Testing**: Start with 3-5 players to test your format
+        
+        **🚨 Common Mistakes:**
+        - Using semicolons (;) instead of commas (,)
+        - Including special characters in player names
+        - Not saving as proper CSV format
+        """)
+    
+    if st.button("✅ Got it, hide guide"):
+        st.session_state.show_guide = False
+        st.rerun()
+    
+    st.markdown("---")# File upload section
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📁 Data Source")
+
+# Option to use default data or upload custom data
+data_source = st.sidebar.radio(
+    "Choose data source:",
+    ["🏆 Default La Liga Legends", "📊 Upload Custom CSV", "🔧 Create Sample Data"],
+    help="Use our curated data, upload your own CSV, or generate sample data"
+)
+
+# Sample data generator
+if data_source == "🔧 Create Sample Data":
+    st.sidebar.markdown("#### 🎲 Generate Sample Players")
+    num_sample_players = st.sidebar.slider("Number of players:", 3, 15, 5)
+    
+    if st.sidebar.button("🎯 Generate Sample Data"):
+        sample_players = generate_sample_players(num_sample_players)
+        st.session_state['sample_players'] = sample_players
+        st.sidebar.success(f"✅ Generated {num_sample_players} sample players!")
+    
+    # Use generated sample data if available
+    if 'sample_players' in st.session_state:
+        custom_players = st.session_state['sample_players']
+
+uploaded_file = None
+if data_source == "📊 Upload Custom CSV":
+    st.sidebar.markdown("#### 📤 Upload Your Data")
+    uploaded_file = st.sidebar.file_uploader(
+        "Choose CSV file", 
+        type=['csv'],
+        help="Upload a CSV file with player statistics. Download template below for correct format."
+    )
+    
+    # Multiple template options
+    st.sidebar.markdown("#### 📥 Download Templates")
+    col1, col2 = st.sidebar.columns(2)
+    
+    with col1:
+        # Standard template
+        template_data = create_csv_template()
+        st.download_button(
+            label="� Standard Template",
+            data=template_data,
+            file_name="player_data_template.csv",
+            mime="text/csv",
+            help="Download the standard CSV template"
+        )
+    
+    with col2:
+        # Create Excel-compatible template
+        simple_template = create_simple_template()
+        st.download_button(
+            label="📋 Simple Template",
+            data=simple_template,
+            file_name="simple_player_template.csv",
+            mime="text/csv",
+            help="Download a simplified CSV template"
+        )
+    
+    # Drag & Drop enhancement
+    if uploaded_file is None:
+        st.sidebar.info("📎 **Tip:** You can drag and drop your CSV file directly onto the upload area!")
+    
+    # Add data format guide
+    if st.sidebar.button("📖 Data Format Guide"):
+        st.session_state.show_guide = True
+        
+    # Show preview if file is uploaded
+    if uploaded_file is not None:
+        success, preview_df, message = validate_and_preview_data(uploaded_file)
+        
+        if success:
+            st.sidebar.success(message)
+            
+            # Show preview in expander
+            with st.sidebar.expander("👀 Data Preview"):
+                st.dataframe(preview_df.head(3), use_container_width=True)
+                
+            # File info
+            file_info = f"""
+            **📄 File Info:**
+            - **Name:** {uploaded_file.name}
+            - **Size:** {uploaded_file.size} bytes
+            - **Players:** {len(preview_df)}
+            """
+            st.sidebar.markdown(file_info)
+        else:
+            st.sidebar.error(message)
+
+st.sidebar.markdown("---")
+
 # Calculate scores
 @st.cache_data
-def calculate_all_scores():
+def calculate_all_scores(custom_players=None):
     player_scores = {}
     detailed_stats = {}
     
-    for player_name, data in players.items():
+    # Use custom players if provided, otherwise use default
+    data_source = custom_players if custom_players else players
+    
+    for player_name, data in data_source.items():
         score = calculate_player_score(data, points_system)
         player_scores[player_name] = score
         
@@ -155,8 +383,39 @@ def calculate_all_scores():
     
     return scores_df, stats_df
 
-# Get data
-scores_df, stats_df = calculate_all_scores()
+# Process data based on source
+custom_players = None
+if uploaded_file is not None:
+    try:
+        # Read uploaded CSV
+        uploaded_df = pd.read_csv(uploaded_file)
+        
+        # Validate format
+        is_valid, message = validate_csv_format(uploaded_df)
+        
+        if is_valid:
+            # Process the uploaded data
+            custom_players = process_uploaded_data(uploaded_df)
+            st.sidebar.success(f"✅ Successfully loaded {len(custom_players)} players from CSV!")
+            
+            # Option to download results later
+            st.sidebar.markdown("📥 **Analysis results will be available for download below**")
+        else:
+            st.sidebar.error(f"❌ Invalid CSV format: {message}")
+            st.sidebar.info("Please download and use the template format.")
+    
+    except Exception as e:
+        st.sidebar.error(f"❌ Error reading CSV: {str(e)}")
+        custom_players = None
+
+# Get data (use custom data if available)
+if custom_players:
+    scores_df, stats_df = calculate_all_scores(custom_players)
+    st.info(f"📊 Showing analysis for {len(custom_players)} uploaded players")
+else:
+    scores_df, stats_df = calculate_all_scores()
+    if data_source == "📊 Upload Custom CSV":
+        st.info("👆 Please upload a CSV file in the sidebar to analyze your own data")
 
 # Player selection
 st.sidebar.subheader("👤 Player Selection")
@@ -371,6 +630,34 @@ st.sidebar.markdown("**Created by:** Danish Syed")
 st.sidebar.markdown("**Data:** La Liga Historical Records")
 
 # Footer
+st.markdown("---")
+
+# Download Results Section (if custom data was uploaded)
+if custom_players:
+    st.markdown("### 📥 Download Analysis Results")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # Download scores CSV
+        scores_csv = scores_df.to_csv(index=False)
+        st.download_button(
+            label="📊 Download Scores CSV",
+            data=scores_csv,
+            file_name="player_analysis_scores.csv",
+            mime="text/csv"
+        )
+    
+    with col2:
+        # Download detailed stats CSV
+        stats_csv = stats_df.to_csv(index=False)
+        st.download_button(
+            label="📋 Download Detailed Stats CSV",
+            data=stats_csv,
+            file_name="player_detailed_stats.csv",
+            mime="text/csv"
+        )
+
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center'>

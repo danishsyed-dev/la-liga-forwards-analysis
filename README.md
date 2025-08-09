@@ -10,6 +10,14 @@ This project analyzes the greatest forwards in La Liga history using Python scri
 - **Season-by-Season Analysis**: Deep dive into individual player performances
 - **Real-time Comparisons**: Compare multiple players side-by-side
 
+### 📤 Custom Data Upload (NEW!)
+- **CSV Upload**: Upload your own player data for analysis
+- **Template Downloads**: Pre-formatted CSV templates with examples
+- **Data Validation**: Real-time validation with helpful error messages
+- **Sample Data Generator**: Generate realistic sample data for testing
+- **Multiple Formats**: Standard and simplified templates for different use cases
+- **Export Results**: Download analysis results as CSV files
+
 ## 🚀 Quick Start - Web App
 
 ### Run Locally
@@ -26,6 +34,40 @@ streamlit run app.py
 - Linux/Mac: Run `./run_app.sh`
 
 The app will open at `http://localhost:8501`
+
+## 📤 Using Custom Data Upload
+
+### Step 1: Prepare Your Data
+1. **Download Template**: Use the "Download CSV Template" button in the app
+2. **Fill Your Data**: Replace example data with your players' statistics
+3. **Required Columns**: `player_name`, `career_goals`, `total_la_liga_titles`, `total_champions_league_titles`
+
+### Step 2: Upload & Analyze
+1. **Select Upload Mode**: Choose "📊 Upload Custom CSV" in the sidebar
+2. **Upload File**: Drag & drop or select your CSV file
+3. **Preview**: Review your data in the preview section
+4. **Analyze**: The app will automatically calculate scores and generate charts
+
+### Step 3: Export Results
+- Download analysis results as CSV files
+- Share your custom analysis with others
+- Compare different datasets
+
+### 📋 CSV Format Examples
+
+**Simple Format:**
+```csv
+player_name,career_goals,total_la_liga_titles,total_champions_league_titles,ballon_dor_wins
+Lionel Messi,474,10,4,4
+Cristiano Ronaldo,311,2,4,4
+Your Player,150,1,0,0
+```
+
+**Detailed Format (Optional):**
+```csv
+player_name,career_goals,season_1_goals,season_1_assists,season_1_awards
+Lionel Messi,474,50,15,"Ballon d'Or Win,La Liga Golden Boot"
+```
 
 ## 📊 Live Demo
 
