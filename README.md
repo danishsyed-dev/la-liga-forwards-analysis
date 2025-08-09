@@ -29,7 +29,22 @@ The app will open at `http://localhost:8501`
 
 ## 📊 Live Demo
 
-🔗 **[Access Live Dashboard](https://la-liga-forwards-analysis.streamlit.app)** *(Coming soon)*
+🔗 **[Static Dashboard (GitHub Pages)](https://danishsyed-dev.github.io/la-liga-forwards-analysis/)** - *Static charts and analysis*
+
+🔗 **[Interactive Dashboard (Streamlit)](https://la-liga-forwards-analysis.streamlit.app)** - *Full interactive experience* *(Coming soon)*
+
+## 🚀 Deployment Options
+
+### Option 1: Static Site (GitHub Pages) ✅
+- **Automatically deployed** via GitHub Actions
+- **URL**: `https://danishsyed-dev.github.io/la-liga-forwards-analysis/`
+- **Features**: Interactive Plotly charts, responsive design, fast loading
+- **Updates**: Automatically rebuilds on every push to main branch
+
+### Option 2: Interactive App (Streamlit Cloud)
+- **Manual deployment** to Streamlit Cloud
+- **Features**: Full interactivity, real-time filtering, dynamic comparisons
+- **Setup**: Deploy from [share.streamlit.io](https://share.streamlit.io)
 
 ## 🛠️ Installation
 
@@ -81,14 +96,28 @@ python scripts/radar_diagram.py
 
 ## 📈 Deployment
 
-### Streamlit Cloud (Free)
-1. Fork this repository
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub account
-4. Deploy from your forked repository
-5. Set the main file path to `app.py`
+## 📈 Deployment
 
-### Other Platforms
+### GitHub Pages (Automated) 🤖
+The static version is automatically deployed using GitHub Actions:
+
+1. **Push to main branch** - triggers automatic deployment
+2. **GitHub Actions builds** the static HTML version
+3. **Deploys to GitHub Pages** at `https://danishsyed-dev.github.io/la-liga-forwards-analysis/`
+
+**Manual Build:**
+```bash
+python generate_static.py
+```
+
+### Streamlit Cloud (Manual)
+1. Go to [share.streamlit.io](https://share.streamlit.io)
+2. Connect your GitHub account
+3. Select this repository
+4. Set main file: `app.py`
+5. Deploy!
+
+### Alternative Platforms
 - **Heroku**: Use the included `Procfile`
 - **Railway**: Deploy directly from GitHub
 - **Replit**: Import repository and run
