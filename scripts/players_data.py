@@ -24,45 +24,38 @@ points_system = {
 # Player data with comprehensive stats
 players = {
     'Lionel Messi': {
-        'career_goals': 474,
+        'career_goals': 474,  # Total La Liga goals
         'seasons': [
             {
                 'season': '2011/2012',
-                'goals': 50,
+                'goals': 50,  # Actual: 50 goals in La Liga
                 'assists': 15,
                 'awards': [
                     'Ballon d\'Or Win',
                     'La Liga Best Player Award',
-                    'La Liga Golden Boot',
-                    'Most Assists in La Liga Season'
+                    'La Liga Golden Boot'
                 ],
                 'team_achievements': ['La Liga Title', 'Copa del Rey'],
                 'cup_final_winner': True,
                 'cl_achievements': [
-                    'CL Top Scorer',
-                    'Most Assists in CL Season'
+                    'CL Top Scorer'
                 ]
             },
             {
                 'season': '2014/2015',
-                'goals': 43,
+                'goals': 43,  # Actual: 43 goals in La Liga
                 'assists': 18,
                 'awards': [
-                    'Ballon d\'Or 2nd Place',
-                    'La Liga Best Player Award',
-                    'Most Assists in La Liga Season'
+                    'La Liga Best Player Award'
                 ],
                 'team_achievements': ['La Liga Title', 'Champions League Win', 'Copa del Rey'],
                 'cup_final_winner': True,
-                'cl_achievements': [
-                    'CL Top Scorer',
-                    'Most Assists in CL Season'
-                ]
+                'cl_achievements': []
             },
             {
-                'season': '2012/2013',
-                'goals': 46,
-                'assists': 12,
+                'season': '2009/2010',
+                'goals': 34,  # Actual: 34 goals in La Liga
+                'assists': 11,
                 'awards': [
                     'Ballon d\'Or Win',
                     'La Liga Best Player Award',
@@ -73,66 +66,60 @@ players = {
                 'cl_achievements': []
             }
         ],
-        'career_awards': ['Ballon d\'Or Win'] * 6,  # 6 Ballon d'Or wins during his La Liga career
+        'career_awards': ['Ballon d\'Or Win'] * 4,  # 4 Ballon d'Or wins during La Liga career (2009,2010,2011,2012)
         'total_la_liga_titles': 10,
         'total_champions_league_titles': 4
     },
     'Cristiano Ronaldo': {
-    'career_goals': 311,
-    'seasons': [
-        {
-            'season': '2011/2012',
-            'goals': 46,
-            'assists': 12,
-            'awards': [
-                'Ballon d\'Or 2nd Place',
-                'La Liga Best Player Award'
-            ],
-            'team_achievements': ['La Liga Title'],
-            'cup_final_winner': False,
-            'cl_achievements': ['CL Top Scorer']
-        },
-        {
-            'season': '2014/2015',
-            'goals': 48,
-            'assists': 16,
-            'awards': [
-                'Ballon d\'Or 2nd Place',
-                'La Liga Best Player Award',
-                'La Liga Golden Boot',
-                'Most Assists in La Liga Season'
-            ],
-            'team_achievements': ['UEFA Super Cup', 'FIFA Club World Cup'],
-            'cup_final_winner': False,
-            'cl_achievements': ['CL Top Scorer']
-        },
-        {
-            'season': '2010/2011',
-            'goals': 40,
-            'assists': 10,
-            'awards': [
-                'Ballon d\'Or 2nd Place',
-                'La Liga Golden Boot'
-            ],
-            'team_achievements': ['Copa del Rey'],
-            'cup_final_winner': True,  # Scored the winning goal
-            'cl_achievements': ['CL Top Scorer']
-        }
-    ],
-    'career_awards': ['Ballon d\'Or Win'] * 4,
-    'total_la_liga_titles': 2,
-    'total_champions_league_titles': 4
+        'career_goals': 311,  # Total La Liga goals
+        'seasons': [
+            {
+                'season': '2013/2014',
+                'goals': 31,  # Actual: 31 goals in La Liga
+                'assists': 11,
+                'awards': [
+                    'Ballon d\'Or Win'
+                ],
+                'team_achievements': ['Champions League Win', 'Copa del Rey'],
+                'cup_final_winner': True,
+                'cl_achievements': ['CL Top Scorer']
+            },
+            {
+                'season': '2015/2016',
+                'goals': 35,  # Actual: 35 goals in La Liga
+                'assists': 11,
+                'awards': [
+                    'Ballon d\'Or Win'
+                ],
+                'team_achievements': ['Champions League Win'],
+                'cup_final_winner': False,
+                'cl_achievements': ['CL Top Scorer']
+            },
+            {
+                'season': '2011/2012',
+                'goals': 46,  # Actual: 46 goals in La Liga
+                'assists': 12,
+                'awards': [
+                    'La Liga Golden Boot'
+                ],
+                'team_achievements': ['La Liga Title'],
+                'cup_final_winner': False,
+                'cl_achievements': []
+            }
+        ],
+        'career_awards': ['Ballon d\'Or Win'] * 4,  # 4 Ballon d'Or wins during Real Madrid career
+        'total_la_liga_titles': 2,
+        'total_champions_league_titles': 4
     },
     'Luis Suárez': {
-        'career_goals': 147,
+        'career_goals': 147,  # Total La Liga goals with Barcelona
         'seasons': [
             {
                 'season': '2015/2016',
-                'goals': 40,
+                'goals': 40,  # Actual: 40 goals in La Liga
                 'assists': 16,
                 'awards': [
-                    'La Liga Golden Boot',
-                    'Most Assists in La Liga Season'
+                    'La Liga Golden Boot'
                 ],
                 'team_achievements': ['La Liga Title', 'Copa del Rey'],
                 'cup_final_winner': True,
@@ -140,54 +127,47 @@ players = {
             },
             {
                 'season': '2016/2017',
-                'goals': 29,
+                'goals': 29,  # Actual: 29 goals in La Liga
                 'assists': 13,
-                'awards': [
-                    '10+ Assist La Liga Season'
-                ],
+                'awards': [],
                 'team_achievements': ['Copa del Rey'],
                 'cup_final_winner': True,
                 'cl_achievements': []
             },
             {
                 'season': '2017/2018',
-                'goals': 25,
+                'goals': 25,  # Actual: 25 goals in La Liga
                 'assists': 12,
-                'awards': [
-                    '10+ Assist La Liga Season'
-                ],
+                'awards': [],
                 'team_achievements': ['La Liga Title', 'Copa del Rey'],
                 'cup_final_winner': True,
                 'cl_achievements': []
             }
         ],
-        'career_awards': [],
+        'career_awards': [],  # No Ballon d'Or wins during La Liga career
         'total_la_liga_titles': 4,
         'total_champions_league_titles': 1
     },
     'Karim Benzema': {
-        'career_goals': 238,
+        'career_goals': 238,  # Total La Liga goals
         'seasons': [
             {
                 'season': '2021/2022',
-                'goals': 27,
+                'goals': 27,  # Actual: 27 goals in La Liga
                 'assists': 12,
                 'awards': [
                     'Ballon d\'Or Win',
-                    'La Liga Best Player Award',
-                    'La Liga Golden Boot',
-                    'Most Assists in La Liga Season'
+                    'La Liga Best Player Award'
                 ],
                 'team_achievements': ['La Liga Title', 'Champions League Win', 'Supercopa de España'],
                 'cup_final_winner': True,
                 'cl_achievements': [
-                    'CL Top Scorer',
-                    'Most Assists in CL Season'
+                    'CL Top Scorer'
                 ]
             },
             {
                 'season': '2015/2016',
-                'goals': 24,
+                'goals': 24,  # Actual: 24 goals in La Liga
                 'assists': 7,
                 'awards': [],
                 'team_achievements': ['Champions League Win'],
@@ -195,17 +175,17 @@ players = {
                 'cl_achievements': []
             },
             {
-                'season': '2018/2019',
-                'goals': 21,
-                'assists': 6,
+                'season': '2019/2020',
+                'goals': 21,  # Actual: 21 goals in La Liga
+                'assists': 8,
                 'awards': [],
-                'team_achievements': [],
+                'team_achievements': ['La Liga Title'],
                 'cup_final_winner': False,
                 'cl_achievements': []
             }
         ],
-        'career_awards': ['Ballon d\'Or Win'],
-        'total_la_liga_titles': 4,
+        'career_awards': ['Ballon d\'Or Win'],  # 1 Ballon d'Or win (2022)
+        'total_la_liga_titles': 5,  # Updated: 5 La Liga titles with Real Madrid
         'total_champions_league_titles': 5
     },
     'Neymar Jr.': {
