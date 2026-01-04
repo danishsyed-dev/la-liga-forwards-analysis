@@ -9,12 +9,13 @@ import plotly.offline as pyo
 import sys
 import os
 import json
+from pathlib import Path
 
-# Add scripts directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
+# Add src directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
-from players_data import players, points_system
-from analysis import calculate_player_score
+from core.players_data import players, points_system
+from core.analysis import calculate_player_score
 
 def calculate_all_scores():
     """Calculate scores for all players with accurate data"""

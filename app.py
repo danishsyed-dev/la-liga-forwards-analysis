@@ -7,14 +7,15 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import sys
 import os
+from pathlib import Path
 from typing import Dict
 
-# Add scripts directory to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'scripts'))
+# Add src directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
-from players_data import players, points_system
-from analysis import calculate_player_score
-from csv_handler import (
+from core.players_data import players, points_system
+from core.analysis import calculate_player_score
+from handlers.csv_handler import (
     create_csv_template, 
     create_simple_template,
     create_sample_csv_content,
