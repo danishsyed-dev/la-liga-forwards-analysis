@@ -50,7 +50,7 @@ The app will open at `http://localhost:8501`
 ### Option 2: View Static Site
 
 🔗 **[Live Demo on GitHub Pages](https://danishsyed-dev.github.io/la-liga-forwards-analysis/)**
-
+🔗 **[Live on Streamlit](https://la-liga-forwards-analysis.streamlit.app/)**
 ---
 
 ## 📁 Project Structure
