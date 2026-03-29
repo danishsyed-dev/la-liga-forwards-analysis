@@ -14,6 +14,25 @@ try:
 except ImportError:
     HAS_STREAMLIT = False
 
+MAX_UPLOAD_SIZE_BYTES = 5 * 1024 * 1024  # 5 MB
+MAX_UPLOAD_ROWS = 5000
+MAX_UPLOAD_COLUMNS = 100
+MAX_TEXT_FIELD_LENGTH = 120
+
+ALLOWED_AWARDS = {
+    "Ballon d'Or Win",
+    "La Liga Golden Boot",
+    "La Liga Best Player Award",
+    "Most Assists in La Liga Season",
+}
+
+ALLOWED_TEAM_ACHIEVEMENTS = {
+    "La Liga Title",
+    "Champions League Win",
+    "Copa del Rey",
+    "Supercopa de España",
+}
+
 
 def create_csv_template() -> str:
     """Create a CSV template for users to download with proper format."""
@@ -269,9 +288,52 @@ def validate_custom_template_format(df: pd.DataFrame) -> Tuple[bool, str]:
     # Check for empty player names
     player_col = found_columns.get('player_name', 'player_name')
     if player_col in df.columns:
-        if df[player_col].isnull().any() or (df[player_col] == '').any():
-            empty_count = df[player_col].isnull().sum() + (df[player_col] == '').sum()
+        normalized_names = df[player_col].astype(str).str.strip()
+        if df[player_col].isnull().any() or (normalized_names == '').any():
+            empty_count = df[player_col].isnull().sum() + (normalized_names == '').sum()
             return False, f"Found {empty_count} empty player names. Please ensure all players have names."
+        if (normalized_names.str.len() > MAX_TEXT_FIELD_LENGTH).any():
+            return False, (
+                f"Player names must be <= {MAX_TEXT_FIELD_LENGTH} characters. "
+                "Please shorten long names."
+            )
+        invalid_name_chars = normalized_names.str.contains(r"[\r\n\t]", regex=True)
+        if invalid_name_chars.any():
+            return False, "Player names contain invalid control characters (newline/tab)."
+
+    # Validate optional categorical columns against known values
+    for i in range(1, 4):
+        awards_col = f"season_{i}_awards"
+        achievements_col = f"season_{i}_team_achievements"
+
+        if awards_col in df.columns:
+            for raw_value in df[awards_col].fillna(""):
+                parsed_awards = [award.strip() for award in str(raw_value).split(",") if award.strip()]
+                invalid_awards = [award for award in parsed_awards if award not in ALLOWED_AWARDS]
+                if invalid_awards:
+                    return (
+                        False,
+                        f"Invalid award value(s) in {awards_col}: {', '.join(sorted(set(invalid_awards)))}. "
+                        "Use only supported award names from the template.",
+                    )
+
+        if achievements_col in df.columns:
+            for raw_value in df[achievements_col].fillna(""):
+                parsed_achievements = [
+                    achievement.strip() for achievement in str(raw_value).split(",") if achievement.strip()
+                ]
+                invalid_achievements = [
+                    achievement
+                    for achievement in parsed_achievements
+                    if achievement not in ALLOWED_TEAM_ACHIEVEMENTS
+                ]
+                if invalid_achievements:
+                    return (
+                        False,
+                        f"Invalid team achievement value(s) in {achievements_col}: "
+                        f"{', '.join(sorted(set(invalid_achievements)))}. "
+                        "Use only supported team achievement names from the template.",
+                    )
     
     return True, f"✅ Valid custom template format! Found {len(df)} players with required columns."
 
@@ -607,6 +669,17 @@ def validate_and_preview_data(uploaded_file: Any) -> Tuple[bool, pd.DataFrame, s
         Tuple of (success, dataframe, message)
     """
     try:
+        file_size = getattr(uploaded_file, "size", 0)
+        if file_size and file_size > MAX_UPLOAD_SIZE_BYTES:
+            return (
+                False,
+                pd.DataFrame(),
+                (
+                    f"File is too large ({file_size} bytes). Maximum allowed size is "
+                    f"{MAX_UPLOAD_SIZE_BYTES} bytes (5 MB)."
+                ),
+            )
+
         # Reset file pointer to beginning
         uploaded_file.seek(0)
         
@@ -627,9 +700,11 @@ def validate_and_preview_data(uploaded_file: Any) -> Tuple[bool, pd.DataFrame, s
                         uploaded_file, 
                         delimiter=delimiter, 
                         encoding=encoding,
+                        engine='c',
                         skipinitialspace=True,
                         quotechar='"',
-                        na_values=['', 'NA', 'N/A', 'null', 'NULL']
+                        na_values=['', 'NA', 'N/A', 'null', 'NULL'],
+                        on_bad_lines='error'
                     )
                     
                     # Check if we got reasonable results
@@ -648,6 +723,21 @@ def validate_and_preview_data(uploaded_file: Any) -> Tuple[bool, pd.DataFrame, s
         
         # Clean column names - remove extra spaces
         df.columns = df.columns.str.strip()
+        if len(df) > MAX_UPLOAD_ROWS:
+            return (
+                False,
+                pd.DataFrame(),
+                f"CSV contains too many rows ({len(df)}). Maximum allowed rows: {MAX_UPLOAD_ROWS}.",
+            )
+        if len(df.columns) > MAX_UPLOAD_COLUMNS:
+            return (
+                False,
+                pd.DataFrame(),
+                (
+                    f"CSV contains too many columns ({len(df.columns)}). "
+                    f"Maximum allowed columns: {MAX_UPLOAD_COLUMNS}."
+                ),
+            )
         
         # Show parsing info
         delimiter_used, encoding_used = successful_params if successful_params else (',', 'utf-8')

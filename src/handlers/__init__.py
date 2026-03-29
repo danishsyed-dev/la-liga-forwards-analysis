@@ -12,6 +12,7 @@ from .csv_handler import (
     validate_and_preview_data,
     diagnose_csv_issues,
 )
+from .builtin_data_handler import load_verified_builtin_players
 
 __all__ = [
     "create_csv_template",
@@ -22,4 +23,5 @@ __all__ = [
     "create_data_info_panel",
     "validate_and_preview_data",
     "diagnose_csv_issues",
+    "load_verified_builtin_players",
 ]
