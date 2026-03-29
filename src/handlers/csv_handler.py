@@ -288,10 +288,10 @@ def validate_custom_template_format(df: pd.DataFrame) -> Tuple[bool, str]:
     # Check for empty player names
     player_col = found_columns.get('player_name', 'player_name')
     if player_col in df.columns:
-        if df[player_col].isnull().any() or (df[player_col] == '').any():
-            empty_count = df[player_col].isnull().sum() + (df[player_col] == '').sum()
-            return False, f"Found {empty_count} empty player names. Please ensure all players have names."
         normalized_names = df[player_col].astype(str).str.strip()
+        if df[player_col].isnull().any() or (normalized_names == '').any():
+            empty_count = df[player_col].isnull().sum() + (normalized_names == '').sum()
+            return False, f"Found {empty_count} empty player names. Please ensure all players have names."
         if (normalized_names.str.len() > MAX_TEXT_FIELD_LENGTH).any():
             return False, (
                 f"Player names must be <= {MAX_TEXT_FIELD_LENGTH} characters. "

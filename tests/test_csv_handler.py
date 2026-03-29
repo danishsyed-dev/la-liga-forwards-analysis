@@ -134,8 +134,9 @@ class _UploadedFileMock:
     """Minimal file-like object for upload validation tests."""
 
     def __init__(self, content: str, size_override: int = None):
-        self._buffer = io.BytesIO(content.encode("utf-8"))
-        self.size = len(content.encode("utf-8")) if size_override is None else size_override
+        encoded_content = content.encode("utf-8")
+        self._buffer = io.BytesIO(encoded_content)
+        self.size = len(encoded_content) if size_override is None else size_override
         self.name = "test.csv"
 
     def seek(self, *args, **kwargs):
