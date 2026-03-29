@@ -661,7 +661,7 @@ elif chart_type == "Final View":
     m1, m2, m3, m4 = st.columns(4)
     m1.metric("🥇 Top Player", top_player)
     m2.metric("🏆 Top Score", top_score)
-    m3.metric("👥 Players Analysed", total_players)
+    m3.metric("👥 Players Analyzed", total_players)
     m4.metric("📈 Average Score", average_score)
 
     st.subheader("🏅 Top 5 Ranking Snapshot")
