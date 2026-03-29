@@ -25,6 +25,7 @@ from handlers.csv_handler import (
     validate_and_preview_data,
     diagnose_csv_issues
 )
+from handlers.builtin_data_handler import load_verified_builtin_players
 
 def generate_sample_players(num_players: int) -> Dict:
     """Generate sample players for testing"""
@@ -237,10 +238,11 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("### 📁 Data Source")
 
 # Option to use default data or upload custom data
+custom_players = None
 data_source = st.sidebar.radio(
     "Choose data source:",
-    ["🏆 Default La Liga Legends", "📊 Upload Custom CSV", "🔧 Create Sample Data"],
-    help="Use our curated data, upload your own CSV, or generate sample data"
+    ["🏆 Default La Liga Legends", "✅ Verified Built-in Dataset", "📊 Upload Custom CSV", "🔧 Create Sample Data"],
+    help="Use curated defaults, a verified built-in CSV, upload your own CSV, or generate sample data"
 )
 
 # Sample data generator
@@ -256,6 +258,15 @@ if data_source == "🔧 Create Sample Data":
     # Use generated sample data if available
     if 'sample_players' in st.session_state:
         custom_players = st.session_state['sample_players']
+
+if data_source == "✅ Verified Built-in Dataset":
+    st.sidebar.markdown("#### ✅ Verified Repository Dataset")
+    verified_players = load_verified_builtin_players()
+    if verified_players:
+        custom_players = verified_players
+        st.sidebar.success(f"✅ Loaded {len(verified_players)} verified players from built-in dataset.")
+    else:
+        st.sidebar.error("❌ Could not load verified built-in dataset.")
 
 uploaded_file = None
 if data_source == "📊 Upload Custom CSV":
@@ -413,7 +424,6 @@ def calculate_all_scores(custom_players=None):
     return scores_df, stats_df
 
 # Process data based on source
-custom_players = None
 if uploaded_file is not None:
     try:
         # Read uploaded CSV
@@ -458,7 +468,7 @@ selected_players = st.sidebar.multiselect(
 st.sidebar.subheader("📊 Visualization Type")
 chart_type = st.sidebar.selectbox(
     "Choose chart type:",
-    ["Bar Chart", "Radar Chart", "Detailed Stats", "Season Analysis"]
+    ["Bar Chart", "Radar Chart", "Detailed Stats", "Season Analysis", "Final View"]
 )
 
 # Main content
@@ -598,7 +608,8 @@ elif chart_type == "Season Analysis":
     season_player = st.selectbox("Select a player for season analysis:", scores_df['Player'].tolist())
     
     if season_player:
-        player_data = players[season_player]
+        player_data_source = custom_players if custom_players else players
+        player_data = player_data_source[season_player]
         seasons_data = []
         
         for season in player_data['seasons']:
@@ -639,6 +650,24 @@ elif chart_type == "Season Analysis":
         # Season details table
         st.subheader("📋 Season Details")
         st.dataframe(seasons_df, use_container_width=True)
+
+elif chart_type == "Final View":
+    st.header("✨ Final Enhanced View")
+    top_player = scores_df.iloc[0]['Player']
+    top_score = int(scores_df.iloc[0]['Score'])
+    total_players = len(scores_df)
+    average_score = round(float(scores_df['Score'].mean()), 1)
+
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("🥇 Top Player", top_player)
+    m2.metric("🏆 Top Score", top_score)
+    m3.metric("👥 Players Analysed", total_players)
+    m4.metric("📈 Average Score", average_score)
+
+    st.subheader("🏅 Top 5 Ranking Snapshot")
+    top_5_df = scores_df.head(5).copy()
+    top_5_df.insert(0, "Rank", range(1, len(top_5_df) + 1))
+    st.dataframe(top_5_df, use_container_width=True, hide_index=True)
 
 # Sidebar info
 st.sidebar.markdown("---")
