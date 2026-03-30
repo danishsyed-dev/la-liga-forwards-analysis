@@ -5,25 +5,26 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 
-Comprehensive data-driven analysis of the greatest forwards in La Liga history using Python, featuring an interactive web dashboard and advanced scoring metrics.
+A comprehensive, data-driven analysis of the greatest forwards in **La Liga history** built with Python and Streamlit. The project features an interactive web dashboard with advanced scoring metrics comparing legendary players — powered by **verified data** scraped from [FBref](https://fbref.com/) and [Wikipedia](https://en.wikipedia.org/).
 
 ---
 
-## ✨ Features
+## ✨ Features and Capabilities
 
 | Feature | Description |
 |---------|-------------|
-| 🎯 **Interactive Dashboard** | Explore data through a beautiful Streamlit web app |
-| 📊 **Multiple Visualizations** | Bar charts, radar charts, scatter plots, and season analysis |
-| 🏆 **Comprehensive Scoring** | Custom points system based on goals, assists, titles, and awards |
-| 📤 **Custom Data Upload** | Upload your own CSV data for analysis |
-| 🌐 **Static Site** | GitHub Pages deployment with interactive Plotly charts |
+| 🎯 **Interactive Dashboard** | Explore historical data seamlessly through a Streamlit web interface with a responsive, modern UI layout. |
+| 📊 **Multiple Visualizations** | Analyze using Bar Charts, comparative Radar Charts, Goals vs Titles scatter plots, and Season-by-Season analyses. |
+| 🏆 **Advanced Scoring System** | Players are ranked via a granular points algorithm evaluating goals, assists, titles, Top Scorer awards, and Ballon d'Or podiums. |
+| 📤 **4 Flexible Data Sources** | Use Default Legends, Verified CSV datasets, dynamically Generate Sample Data, or Upload your custom CSV for processing. |
+| 🔄 **Automated Data Pipeline** | Wikipedia awards/honours data auto-scraped; FBref stats importable via CSV export. Monthly CI refresh supported. |
+| 🌐 **Static Generation** | Ability to output analysis graphs to static HTML and deploy automatically to GitHub Pages. |
 
 ---
 
 ## 🚀 Quick Start
 
-### Option 1: Run Locally
+### Run the App Locally
 
 ```bash
 # Clone the repository
@@ -32,7 +33,11 @@ cd la-liga-forwards-analysis
 
 # Create virtual environment (recommended)
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# Activate environment
+# On Windows:
+.venv\Scripts\activate
+# On Linux/Mac:
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -41,194 +46,200 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-**Alternative launchers:**
-- **Windows**: Double-click `run_app.bat`
-- **Linux/Mac**: Run `./run_app.sh`
+**Alternative Windows Launcher:**
+- Double-click `run_app.bat` to launch automatically.
 
-The app will open at `http://localhost:8501`
+*(The Streamlit application will start at `http://localhost:8501`)*
 
-### Option 2: View Static Site
+### View Deployed Web Version
 
-🔗 **[Live Demo on GitHub Pages](https://danishsyed-dev.github.io/la-liga-forwards-analysis/)**
+🔗 **[Live Demo on GitHub Pages](https://danishsyed-dev.github.io/la-liga-forwards-analysis/)**  
 🔗 **[Live on Streamlit](https://la-liga-forwards-analysis.streamlit.app/)**
+
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 la-liga-forwards-analysis/
-├── 📂 src/                          # Main source code
-│   ├── core/                        # Core analysis modules
-│   │   ├── analysis.py              # Score calculation logic
-│   │   └── players_data.py          # Player data & scoring system
-│   ├── handlers/                    # Data handlers
-│   │   └── csv_handler.py           # CSV upload & validation
-│   └── visualizations/              # Chart generation
-│       ├── bar_chart.py             # Bar chart module
-│       └── radar_diagram.py         # Radar chart module
-├── 📂 tests/                        # Test suite
-│   ├── test_analysis.py             # Analysis tests
-│   └── test_csv_handler.py          # CSV handler tests
-├── 📂 docs/                         # Generated static site
-├── 📂 outputs/                      # Generated charts & data
-├── 📂 .github/workflows/            # CI/CD pipeline
-│   └── deploy.yml                   # Build, test & deploy
-├── 📂 .streamlit/                   # Streamlit configuration
-├── 📄 app.py                        # Main Streamlit application
-├── 📄 generate_static.py            # Static site generator
-├── 📄 requirements.txt              # Python dependencies
-├── 📄 pyproject.toml                # Modern Python config
-└── 📄 LICENSE                       # MIT License
+├── 📂 src/                              # Main source code directory
+│   ├── core/                            # Core analysis logic
+│   │   ├── analysis.py                  # Scoring algorithm: calculates player scores from achievements
+│   │   └── players_data.py              # Data loader: reads JSON dataset or falls back to built-in data
+│   ├── handlers/                        # Data I/O handlers
+│   │   ├── builtin_data_handler.py      # Loader for validated built-in datasets
+│   │   └── csv_handler.py               # Robust CSV processing, validation, and template generation
+│   └── visualizations/                  # Plotly chart drawing components
+│       ├── bar_chart.py                 # Bar Chart generation logic
+│       └── radar_diagram.py             # Multi-metric Radar comparison logic
+├── 📂 scripts/                          # Data pipeline scripts
+│   ├── config.py                        # Centralised configuration (URLs, paths, points system)
+│   ├── scrape_wikipedia.py              # Wikipedia scraper (Pichichi, Ballon d'Or, titles, CL)
+│   ├── scrape_fbref.py                  # FBref Selenium scraper (Cloudflare-protected)
+│   ├── import_fbref_csv.py              # Manual FBref CSV importer (recommended workflow)
+│   └── merge_data.py                    # Merges FBref stats + Wikipedia awards → unified JSON
+├── 📂 data/                             # All datasets
+│   ├── raw/                             # Raw scraped data
+│   │   ├── wikipedia/*.json             # Scraped award data (pichichi, ballon_dor, etc.)
+│   │   └── fbref/*.csv                  # Season-by-season player stats
+│   ├── processed/                       # Unified datasets
+│   │   ├── la_liga_all_players.json     # ⭐ Final merged dataset used by the app
+│   │   └── players_summary.csv          # Quick-view summary table
+│   └── verified_players.csv             # Legacy built-in dataset
+├── 📂 tests/                            # Automated Pytest suite
+│   ├── test_analysis.py                 # Unit tests for scoring logic accuracy
+│   └── test_csv_handler.py              # Unit tests for CSV validation
+├── 📂 docs/                             # GitHub Pages content (auto-generated)
+├── 📂 .github/workflows/               # CI/CD pipelines
+│   └── deploy.yml                       # Build, test, deploy + monthly data refresh
+├── 📄 app.py                            # Streamlit web app entry point
+├── 📄 generate_static.py                # Converts analysis into static interactive HTML
+├── 📄 pyproject.toml                    # Modern Python tooling configs
+└── 📄 requirements.txt                  # Python dependencies
 ```
 
 ---
 
-## 📊 Using Custom Data
+## 🔄 Data Pipeline
 
-### Step 1: Prepare Your Data
+The project uses a **two-source extraction pipeline** to gather verified data:
 
-Download the CSV template from the app or create your own with these required columns:
+### Data Flow
 
-| Column | Type | Description |
-|--------|------|-------------|
-| `player_name` | string | Player's full name |
-| `career_goals` | integer | Total La Liga goals |
-| `total_la_liga_titles` | integer | Number of league titles |
-| `total_champions_league_titles` | integer | Number of CL titles |
-
-**Optional columns:**
-- `ballon_dor_wins` - Number of Ballon d'Or awards
-- `season_X_goals`, `season_X_assists` - Season stats (X = 1, 2, 3)
-- `season_X_awards` - Comma-separated awards
-
-### Step 2: Upload & Analyze
-
-1. Select **"📊 Upload Custom CSV"** in the sidebar
-2. Upload your CSV file
-3. View automatic analysis and visualizations!
-
-### Example CSV
-
-```csv
-player_name,career_goals,total_la_liga_titles,total_champions_league_titles,ballon_dor_wins
-Lionel Messi,474,10,4,4
-Cristiano Ronaldo,311,2,4,4
-Luis Suárez,147,4,1,0
+```
+┌─────────────┐     ┌──────────────────┐     ┌──────────────────────────┐
+│  Wikipedia   │────▶│ scrape_wikipedia │────▶│ data/raw/wikipedia/*.json│
+│  (Awards)    │     │      .py         │     │  • pichichi.json         │
+└─────────────┘     └──────────────────┘     │  • ballon_dor.json       │
+                                              │  • la_liga_titles.json   │
+                                              │  • champions_league.json │
+┌─────────────┐     ┌──────────────────┐     │  • la_liga_best_player   │
+│   FBref      │────▶│ import_fbref_csv │────▶│ data/raw/fbref/*.csv     │
+│  (Stats)     │     │      .py         │     └─────────┬────────────────┘
+└─────────────┘     └──────────────────┘               │
+                                                        ▼
+                                              ┌──────────────────┐
+                                              │  merge_data.py   │
+                                              └────────┬─────────┘
+                                                       ▼
+                                              ┌──────────────────────────────┐
+                                              │ data/processed/              │
+                                              │   la_liga_all_players.json   │
+                                              │   players_summary.csv        │
+                                              └──────────────────────────────┘
 ```
 
----
-
-## 🏆 Scoring System
-
-| Achievement | Points |
-|-------------|--------|
-| Ballon d'Or Win | 5 |
-| Champions League Win | 5 |
-| CL Top Scorer | 5 |
-| 200+ La Liga Goals | 5 |
-| La Liga Best Player Award | 4 |
-| La Liga Golden Boot | 3 |
-| 100+ La Liga Goals | 2 |
-| 20+ Goal La Liga Season | 2 |
-| Most Assists in La Liga Season | 2 |
-| La Liga Title | 1 |
-| 10+ Assist La Liga Season | 1 |
-| Cup Final Winner | 1 |
-| Other Trophies | 1 |
-
----
-
-## 🛠️ Development
-
-### Prerequisites
-
-- Python 3.9 or higher
-- pip package manager
-
-### Setup Development Environment
+### Running the Pipeline
 
 ```bash
-# Clone and setup
+# Step 1: Scrape Wikipedia awards (automated)
+python scripts/scrape_wikipedia.py --force
+
+# Step 2: Import FBref stats (manual CSV export — see instructions below)
+python scripts/import_fbref_csv.py
+
+# Step 3: Merge everything into the final dataset
+python scripts/merge_data.py
+```
+
+### Getting FBref Data
+
+FBref uses Cloudflare protection that blocks automated scrapers. To get stats data:
+
+1. Open your browser and navigate to the [FBref La Liga Stats page](https://fbref.com/en/comps/12/stats/La-Liga-Stats)
+2. Find the **"Standard Stats"** table
+3. Click **"Share & Export" → "Get table as CSV (for Excel)"**
+4. Save the CSV as `data/raw/fbref/<season>.csv` (e.g., `2023-2024.csv`)
+5. Run `python scripts/import_fbref_csv.py` to process the CSVs
+
+### Data Sources & Verification
+
+| Source | Data Extracted | Method |
+|--------|---------------|--------|
+| **[FBref](https://fbref.com/)** (StatsBomb) | Season stats: goals, assists, matches, minutes | Manual CSV export |
+| **[Wikipedia](https://en.wikipedia.org/)** — Pichichi Trophy | La Liga top scorer winners (1929–present) | Automated scraping |
+| **[Wikipedia](https://en.wikipedia.org/)** — Ballon d'Or | Winners & podium finishers (1956–present) | Automated scraping |
+| **[Wikipedia](https://en.wikipedia.org/)** — La Liga Awards | Best Player award winners | Automated scraping |
+| **[Wikipedia](https://en.wikipedia.org/)** — Spanish Champions | La Liga title winners by season | Automated scraping |
+| **[Wikipedia](https://en.wikipedia.org/)** — Champions League | UEFA CL winners by season | Automated scraping |
+
+---
+
+## 📊 Providing Your Own Data
+
+You can supply your own player statistics directly inside the app using the sidebar. 
+
+### Custom CSV Upload
+
+1. Select **"📊 Upload Custom CSV"** in the sidebar.
+2. Download a provided **Template** to see required columns.
+3. Upload your CSV - the internal validation engine (`src/handlers/csv_handler.py`) will check it.
+4. Download new insights directly inside the app after generation!
+
+**Required standard columns:**
+- `player_name` - Player's full name
+- `career_goals` - Total La Liga goals
+- `total_la_liga_titles` - Amount of La Liga league titles
+- `total_champions_league_titles` - Amount of Champions League titles
+
+**Optional deeper columns:**
+- `ballon_dor_wins`
+- `season_X_goals` & `season_X_assists` (For historical timeline charts)
+- `season_X_awards` (Comma-separated values)
+
+---
+
+## 🏆 How the Scoring Engine Works
+
+The core ranking evaluates everything from legacy to micro-achievements (defined in `src/core/players_data.py`).
+
+| Achievement Category | Points |
+|----------------------|--------|
+| **Ballon d'Or Win**  | 5      |
+| Ballon d'Or 2nd/3rd Place | 3 / 1 |
+| **Champions League Win** | 5 |
+| CL Top Scorer / Most Assists | 5 / 2 |
+| **200+ / 100+ Career La Liga Goals** | 5 / 2 |
+| La Liga Best Player Award | 4 |
+| La Liga Golden Boot | 3    |
+| 20+ Goal Season      | 2      |
+| Most Assists in La Liga Season | 2 |
+| **La Liga Title**    | 1      |
+| Cup / Other Trophies | 1 (per trophy) |
+
+*(Points logic explicitly prevents double-counting if an attribute is derived from something else).*
+
+---
+
+## 🛠️ Development & Contributions
+
+### Code Setup
+
+```bash
 git clone https://github.com/danishsyed-dev/la-liga-forwards-analysis.git
 cd la-liga-forwards-analysis
 
-# Create virtual environment
+# Isolate environment 
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate  # (.venv\Scripts\activate on Windows)
 
-# Install with dev dependencies
-pip install -e ".[dev]"
+# Install dependencies
+pip install -r requirements.txt
 
 # Run tests
 pytest tests/ -v
 ```
 
-### Running Scripts
+### Pull Requests Are Welcome!
 
-```bash
-# Run Streamlit app
-streamlit run app.py
-
-# Generate static site
-python generate_static.py
-```
+1. **Fork** the repository
+2. Create a clean branch (`git checkout -b feature/cool-idea`)
+3. Commit neatly (`git commit -m 'feat: Added cool idea'`)
+4. **Push** branch and submit a PR to `main`.
 
 ---
 
-## 🚀 Deployment
+## 📄 License and Author
 
-### GitHub Pages (Automatic)
-
-The static site automatically deploys via GitHub Actions on every push to `main`:
-
-1. Tests run on all pushes and PRs
-2. Static HTML generates on merge to main
-3. Deploys to: `https://danishsyed-dev.github.io/la-liga-forwards-analysis/`
-
-### Streamlit Cloud
-
-1. Go to [share.streamlit.io](https://share.streamlit.io)
-2. Connect your GitHub account
-3. Select this repository
-4. Set main file: `app.py`
-5. Deploy!
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**Danish Syed**
-- GitHub: [@danishsyed-dev](https://github.com/danishsyed-dev)
-
----
-
-<div align="center">
-  <p>
-    <strong>⚽ Discover the Greatest La Liga Forwards!</strong>
-  </p>
-  <p>
-    <a href="https://danishsyed-dev.github.io/la-liga-forwards-analysis/">View Live Demo</a>
-    ·
-    <a href="https://github.com/danishsyed-dev/la-liga-forwards-analysis/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/danishsyed-dev/la-liga-forwards-analysis/issues">Request Feature</a>
-  </p>
-</div>
+- **Author**: Danish Syed ([@danishsyed-dev](https://github.com/danishsyed-dev))  
+- **License**: MIT License ([LICENSE](LICENSE))

@@ -5,6 +5,12 @@ matplotlib>=3.7.0
 streamlit>=1.28.0
 plotly>=5.18.0
 
+# Data pipeline (scraping)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+selenium>=4.15.0
+
 # Development dependencies (optional)
 # pytest>=7.0.0
 # pytest-cov>=4.0.0

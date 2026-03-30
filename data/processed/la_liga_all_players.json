@@ -1,0 +1,3408 @@
+{
+  "metadata": {
+    "last_updated": "2026-03-30 12:10:58",
+    "total_players": 165,
+    "sources": {
+      "stats": "FBref.com (Sports Reference / StatsBomb)",
+      "awards": "Wikipedia"
+    },
+    "description": "Comprehensive La Liga player statistics combining season-by-season performance data from FBref with awards and honours from Wikipedia."
+  },
+  "players": {
+    "Paco Bienzobas": {
+      "career_goals": 14,
+      "team": "Real Sociedad",
+      "teams": [
+        "Real Sociedad"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1929",
+          "team": "Real Sociedad",
+          "goals": 14,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Guillermo Gorostiza": {
+      "career_goals": 19,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1929–30",
+          "team": "Athletic Club",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Bata": {
+      "career_goals": 27,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1930–31",
+          "team": "Athletic Club",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Manuel Olivares": {
+      "career_goals": 16,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1932–33",
+          "team": "Real Madrid",
+          "goals": 16,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Isidro Lángara": {
+      "career_goals": 27,
+      "team": "Oviedo",
+      "teams": [
+        "Oviedo"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1933–34",
+          "team": "Oviedo",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Victorio Unamuno": {
+      "career_goals": 20,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1939–40",
+          "team": "Athletic Club",
+          "goals": 20,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Pruden": {
+      "career_goals": 30,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1940–41",
+          "team": "Atlético Madrid",
+          "goals": 30,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Mundo": {
+      "career_goals": 27,
+      "team": "Valencia",
+      "teams": [
+        "Valencia"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1941–42",
+          "team": "Valencia",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Mariano Martín": {
+      "career_goals": 32,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1942–43",
+          "team": "Barcelona",
+          "goals": 32,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Telmo Zarra": {
+      "career_goals": 19,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1944–45",
+          "team": "Athletic Club",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Pahiño": {
+      "career_goals": 23,
+      "team": "Celta Vigo",
+      "teams": [
+        "Celta Vigo"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1947–48",
+          "team": "Celta Vigo",
+          "goals": 23,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "César": {
+      "career_goals": 28,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1948–49",
+          "team": "Barcelona",
+          "goals": 28,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Alfredo Di Stéfano": {
+      "career_goals": 27,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1953–54",
+          "team": "Real Madrid",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Juan Arza": {
+      "career_goals": 28,
+      "team": "Sevilla",
+      "teams": [
+        "Sevilla"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1954–55",
+          "team": "Sevilla",
+          "goals": 28,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ricardo Alós": {
+      "career_goals": 19,
+      "team": "Valencia",
+      "teams": [
+        "Valencia"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1957–58",
+          "team": "Valencia",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Manuel Badenes": {
+      "career_goals": 19,
+      "team": "Valladolid",
+      "teams": [
+        "Valladolid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1957–58",
+          "team": "Valladolid",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ferenc Puskás": {
+      "career_goals": 26,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1959–60",
+          "team": "Real Madrid",
+          "goals": 26,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Juan Seminario": {
+      "career_goals": 25,
+      "team": "Zaragoza",
+      "teams": [
+        "Zaragoza"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1961–62",
+          "team": "Zaragoza",
+          "goals": 25,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Cayetano Ré": {
+      "career_goals": 25,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1964–65",
+          "team": "Barcelona",
+          "goals": 25,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Vavá II": {
+      "career_goals": 19,
+      "team": "Elche",
+      "teams": [
+        "Elche"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1965–66",
+          "team": "Elche",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Waldo": {
+      "career_goals": 24,
+      "team": "Valencia",
+      "teams": [
+        "Valencia"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1966–67",
+          "team": "Valencia",
+          "goals": 24,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Fidel Uriarte": {
+      "career_goals": 22,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1967–68",
+          "team": "Athletic Club",
+          "goals": 22,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Amancio": {
+      "career_goals": 14,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1968–69",
+          "team": "Real Madrid",
+          "goals": 14,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "José Eulogio Gárate": {
+      "career_goals": 14,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1968–69",
+          "team": "Atlético Madrid",
+          "goals": 14,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Luis Aragonés": {
+      "career_goals": 16,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1969–70",
+          "team": "Atlético Madrid",
+          "goals": 16,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Carles Rexach": {
+      "career_goals": 17,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1970–71",
+          "team": "Barcelona",
+          "goals": 17,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Enrique Porta": {
+      "career_goals": 20,
+      "team": "Granada",
+      "teams": [
+        "Granada"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1971–72",
+          "team": "Granada",
+          "goals": 20,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Marianín": {
+      "career_goals": 19,
+      "team": "Oviedo",
+      "teams": [
+        "Oviedo"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1972–73",
+          "team": "Oviedo",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Quini": {
+      "career_goals": 20,
+      "team": "Sporting Gijón",
+      "teams": [
+        "Sporting Gijón"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1973–74",
+          "team": "Sporting Gijón",
+          "goals": 20,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Carlos": {
+      "career_goals": 19,
+      "team": "Athletic Club",
+      "teams": [
+        "Athletic Club"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1974–75",
+          "team": "Athletic Club",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Mario Kempes": {
+      "career_goals": 24,
+      "team": "Valencia",
+      "teams": [
+        "Valencia"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1976–77",
+          "team": "Valencia",
+          "goals": 24,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Hans Krankl": {
+      "career_goals": 29,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1978–79",
+          "team": "Barcelona",
+          "goals": 29,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Poli Rincón": {
+      "career_goals": 20,
+      "team": "Real Betis",
+      "teams": [
+        "Real Betis"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1982–83",
+          "team": "Real Betis",
+          "goals": 20,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jorge da Silva": {
+      "career_goals": 17,
+      "team": "Valladolid",
+      "teams": [
+        "Valladolid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1983–84",
+          "team": "Valladolid",
+          "goals": 17,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Juanito": {
+      "career_goals": 17,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1983–84",
+          "team": "Real Madrid",
+          "goals": 17,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Hugo Sánchez": {
+      "career_goals": 19,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1984–85",
+          "team": "Atlético Madrid",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Baltazar": {
+      "career_goals": 35,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1988–89",
+          "team": "Atlético Madrid",
+          "goals": 35,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Emilio Butragueño": {
+      "career_goals": 19,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1990–91",
+          "team": "Real Madrid",
+          "goals": 19,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Manolo": {
+      "career_goals": 27,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1991–92",
+          "team": "Atlético Madrid",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Bebeto": {
+      "career_goals": 29,
+      "team": "Deportivo La Coruña",
+      "teams": [
+        "Deportivo La Coruña"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1992–93",
+          "team": "Deportivo La Coruña",
+          "goals": 29,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Romário": {
+      "career_goals": 30,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1993–94",
+          "team": "Barcelona",
+          "goals": 30,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Iván Zamorano": {
+      "career_goals": 28,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1994–95",
+          "team": "Real Madrid",
+          "goals": 28,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Juan Antonio Pizzi": {
+      "career_goals": 31,
+      "team": "Tenerife",
+      "teams": [
+        "Tenerife"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1995–96",
+          "team": "Tenerife",
+          "goals": 31,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ronaldo": {
+      "career_goals": 34,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1996–97",
+          "team": "Barcelona",
+          "goals": 34,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Christian Vieri": {
+      "career_goals": 24,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1997–98",
+          "team": "Atlético Madrid",
+          "goals": 24,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Raúl": {
+      "career_goals": 25,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1998–99",
+          "team": "Real Madrid",
+          "goals": 25,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Salva": {
+      "career_goals": 27,
+      "team": "Racing Santander",
+      "teams": [
+        "Racing Santander"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "1999–2000",
+          "team": "Racing Santander",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Diego Tristán": {
+      "career_goals": 21,
+      "team": "Deportivo La Coruña",
+      "teams": [
+        "Deportivo La Coruña"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2001–02",
+          "team": "Deportivo La Coruña",
+          "goals": 21,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Roy Makaay": {
+      "career_goals": 29,
+      "team": "Deportivo La Coruña",
+      "teams": [
+        "Deportivo La Coruña"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2002–03",
+          "team": "Deportivo La Coruña",
+          "goals": 29,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Diego Forlán": {
+      "career_goals": 25,
+      "team": "Villarreal",
+      "teams": [
+        "Villarreal"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2004–05",
+          "team": "Villarreal",
+          "goals": 25,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Samuel Eto'o": {
+      "career_goals": 26,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2005–06",
+          "team": "Barcelona",
+          "goals": 26,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Ruud van Nistelrooy": {
+      "career_goals": 25,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2006–07",
+          "team": "Real Madrid",
+          "goals": 25,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Dani Güiza": {
+      "career_goals": 27,
+      "team": "Mallorca",
+      "teams": [
+        "Mallorca"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2007–08",
+          "team": "Mallorca",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Lionel Messi": {
+      "career_goals": 34,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2009–10",
+          "team": "Barcelona",
+          "goals": 34,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Cristiano Ronaldo": {
+      "career_goals": 40,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2010–11",
+          "team": "Real Madrid",
+          "goals": 40,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Luis Suárez": {
+      "career_goals": 40,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2015–16",
+          "team": "Barcelona",
+          "goals": 40,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Karim Benzema": {
+      "career_goals": 27,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2021–22",
+          "team": "Real Madrid",
+          "goals": 27,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Robert Lewandowski": {
+      "career_goals": 23,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2022–23",
+          "team": "Barcelona",
+          "goals": 23,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [
+            "La Liga Title"
+          ],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 1,
+      "total_champions_league_titles": 0
+    },
+    "Artem Dovbyk": {
+      "career_goals": 24,
+      "team": "Girona",
+      "teams": [
+        "Girona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2023–24",
+          "team": "Girona",
+          "goals": 24,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kylian Mbappé": {
+      "career_goals": 31,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [
+        {
+          "season": "2024–25",
+          "team": "Real Madrid",
+          "goals": 31,
+          "assists": 0,
+          "matches_played": 0,
+          "minutes": 0,
+          "awards": [
+            "La Liga Golden Boot"
+          ],
+          "team_achievements": [],
+          "cup_final_winner": false,
+          "cl_achievements": []
+        }
+      ],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Stanley Matthews": {
+      "career_goals": 0,
+      "team": "Blackpool",
+      "teams": [
+        "Blackpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Raymond Kopa": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Billy Wright": {
+      "career_goals": 0,
+      "team": "Wolverhampton Wanderers",
+      "teams": [
+        "Wolverhampton Wanderers"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Helmut Rahn": {
+      "career_goals": 0,
+      "team": "Rot-Weiss Essen",
+      "teams": [
+        "Rot-Weiss Essen"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Just Fontaine": {
+      "career_goals": 0,
+      "team": "Reims",
+      "teams": [
+        "Reims"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "John Charles": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Uwe Seeler": {
+      "career_goals": 0,
+      "team": "Hamburger SV",
+      "teams": [
+        "Hamburger SV"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Omar Sívori": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Johnny Haynes": {
+      "career_goals": 0,
+      "team": "Fulham",
+      "teams": [
+        "Fulham"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Josef Masopust": {
+      "career_goals": 0,
+      "team": "Dukla Prague",
+      "teams": [
+        "Dukla Prague"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Eusébio": {
+      "career_goals": 0,
+      "team": "Benfica",
+      "teams": [
+        "Benfica"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Karl-Heinz Schnellinger": {
+      "career_goals": 0,
+      "team": "1. FC Köln",
+      "teams": [
+        "1. FC Köln"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Lev Yashin": {
+      "career_goals": 0,
+      "team": "Dynamo Moscow",
+      "teams": [
+        "Dynamo Moscow"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Gianni Rivera": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jimmy Greaves": {
+      "career_goals": 0,
+      "team": "Tottenham Hotspur",
+      "teams": [
+        "Tottenham Hotspur"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Denis Law": {
+      "career_goals": 0,
+      "team": "Manchester United",
+      "teams": [
+        "Manchester United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Giacinto Facchetti": {
+      "career_goals": 0,
+      "team": "Inter Milan",
+      "teams": [
+        "Inter Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Bobby Charlton": {
+      "career_goals": 0,
+      "team": "Manchester United",
+      "teams": [
+        "Manchester United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Franz Beckenbauer": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Flórián Albert": {
+      "career_goals": 0,
+      "team": "Ferencváros",
+      "teams": [
+        "Ferencváros"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jimmy Johnstone": {
+      "career_goals": 0,
+      "team": "Celtic",
+      "teams": [
+        "Celtic"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "George Best": {
+      "career_goals": 0,
+      "team": "Manchester United",
+      "teams": [
+        "Manchester United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Dragan Džajić": {
+      "career_goals": 0,
+      "team": "Red Star Belgrade",
+      "teams": [
+        "Red Star Belgrade"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Gigi Riva": {
+      "career_goals": 0,
+      "team": "Cagliari",
+      "teams": [
+        "Cagliari"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Gerd Müller": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Bobby Moore": {
+      "career_goals": 0,
+      "team": "West Ham United",
+      "teams": [
+        "West Ham United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Johan Cruyff (1)": {
+      "career_goals": 0,
+      "team": "Ajax",
+      "teams": [
+        "Ajax"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Sandro Mazzola": {
+      "career_goals": 0,
+      "team": "Inter Milan",
+      "teams": [
+        "Inter Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Dino Zoff": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kazimierz Deyna": {
+      "career_goals": 0,
+      "team": "Legia Warsaw",
+      "teams": [
+        "Legia Warsaw"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Oleg Blokhin": {
+      "career_goals": 0,
+      "team": "Dynamo Kyiv",
+      "teams": [
+        "Dynamo Kyiv"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Rob Rensenbrink": {
+      "career_goals": 0,
+      "team": "Anderlecht",
+      "teams": [
+        "Anderlecht"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ivo Viktor": {
+      "career_goals": 0,
+      "team": "Dukla Prague",
+      "teams": [
+        "Dukla Prague"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Allan Simonsen": {
+      "career_goals": 0,
+      "team": "Borussia Mönchengladbach",
+      "teams": [
+        "Borussia Mönchengladbach"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kevin Keegan": {
+      "career_goals": 0,
+      "team": "Hamburger SV",
+      "teams": [
+        "Hamburger SV"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Michel Platini": {
+      "career_goals": 0,
+      "team": "Nancy",
+      "teams": [
+        "Nancy"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Karl-Heinz Rummenigge": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ruud Krol": {
+      "career_goals": 0,
+      "team": "Ajax",
+      "teams": [
+        "Ajax"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Bernd Schuster": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Paul Breitner": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Paolo Rossi": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Alain Giresse": {
+      "career_goals": 0,
+      "team": "Bordeaux",
+      "teams": [
+        "Bordeaux"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Zbigniew Boniek": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kenny Dalglish": {
+      "career_goals": 0,
+      "team": "Liverpool",
+      "teams": [
+        "Liverpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jean Tigana": {
+      "career_goals": 0,
+      "team": "Bordeaux",
+      "teams": [
+        "Bordeaux"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Preben Elkjær": {
+      "career_goals": 0,
+      "team": "Hellas Verona",
+      "teams": [
+        "Hellas Verona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Igor Belanov": {
+      "career_goals": 0,
+      "team": "Dynamo Kyiv",
+      "teams": [
+        "Dynamo Kyiv"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Gary Lineker": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ruud Gullit": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Paulo Futre": {
+      "career_goals": 0,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Marco van Basten (1)": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or Win",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Frank Rijkaard": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Franco Baresi": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Lothar Matthäus": {
+      "career_goals": 0,
+      "team": "Inter Milan",
+      "teams": [
+        "Inter Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Salvatore Schillaci": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Andreas Brehme": {
+      "career_goals": 0,
+      "team": "Inter Milan",
+      "teams": [
+        "Inter Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jean-Pierre Papin": {
+      "career_goals": 0,
+      "team": "Marseille",
+      "teams": [
+        "Marseille"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Hristo Stoichkov": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Dennis Bergkamp": {
+      "career_goals": 0,
+      "team": "Ajax",
+      "teams": [
+        "Ajax"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Roberto Baggio": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Eric Cantona": {
+      "career_goals": 0,
+      "team": "Manchester United",
+      "teams": [
+        "Manchester United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Paolo Maldini": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "George Weah": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jürgen Klinsmann": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jari Litmanen": {
+      "career_goals": 0,
+      "team": "Ajax",
+      "teams": [
+        "Ajax"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Matthias Sammer": {
+      "career_goals": 0,
+      "team": "Borussia Dortmund",
+      "teams": [
+        "Borussia Dortmund"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Alan Shearer": {
+      "career_goals": 0,
+      "team": "Newcastle United",
+      "teams": [
+        "Newcastle United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Predrag Mijatović": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Zinedine Zidane": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win",
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Davor Šuker": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Rivaldo": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "David Beckham": {
+      "career_goals": 0,
+      "team": "Manchester United",
+      "teams": [
+        "Manchester United"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Andriy Shevchenko": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Luís Figo": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Michael Owen": {
+      "career_goals": 0,
+      "team": "Liverpool",
+      "teams": [
+        "Liverpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Oliver Kahn": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Roberto Carlos": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Pavel Nedvěd": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Thierry Henry": {
+      "career_goals": 0,
+      "team": "Arsenal",
+      "teams": [
+        "Arsenal"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Deco": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ronaldinho": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Frank Lampard": {
+      "career_goals": 0,
+      "team": "Chelsea",
+      "teams": [
+        "Chelsea"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Steven Gerrard": {
+      "career_goals": 0,
+      "team": "Liverpool",
+      "teams": [
+        "Liverpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Fabio Cannavaro": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Gianluigi Buffon": {
+      "career_goals": 0,
+      "team": "Juventus",
+      "teams": [
+        "Juventus"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kaká": {
+      "career_goals": 0,
+      "team": "Milan",
+      "teams": [
+        "Milan"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Fernando Torres": {
+      "career_goals": 0,
+      "team": "Liverpool",
+      "teams": [
+        "Liverpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Xavi": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Andrés Iniesta": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Franck Ribéry": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Manuel Neuer": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Neymar": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Antoine Griezmann": {
+      "career_goals": 0,
+      "team": "Atlético Madrid",
+      "teams": [
+        "Atlético Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place",
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Luka Modrić": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Virgil van Dijk": {
+      "career_goals": 0,
+      "team": "Liverpool",
+      "teams": [
+        "Liverpool"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jorginho": {
+      "career_goals": 0,
+      "team": "Chelsea",
+      "teams": [
+        "Chelsea"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Sadio Mané": {
+      "career_goals": 0,
+      "team": "Bayern Munich",
+      "teams": [
+        "Bayern Munich"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Kevin De Bruyne": {
+      "career_goals": 0,
+      "team": "Manchester City",
+      "teams": [
+        "Manchester City"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Erling Haaland": {
+      "career_goals": 0,
+      "team": "Manchester City",
+      "teams": [
+        "Manchester City"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Rodri": {
+      "career_goals": 0,
+      "team": "Manchester City",
+      "teams": [
+        "Manchester City"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Vinícius Júnior": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Jude Bellingham": {
+      "career_goals": 0,
+      "team": "Real Madrid",
+      "teams": [
+        "Real Madrid"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Ousmane Dembélé": {
+      "career_goals": 0,
+      "team": "Paris Saint-Germain",
+      "teams": [
+        "Paris Saint-Germain"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Lamine Yamal": {
+      "career_goals": 0,
+      "team": "Barcelona",
+      "teams": [
+        "Barcelona"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 2nd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "Vitinha": {
+      "career_goals": 0,
+      "team": "Paris Saint-Germain",
+      "teams": [
+        "Paris Saint-Germain"
+      ],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    }
+  }
+}

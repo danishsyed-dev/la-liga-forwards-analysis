@@ -1,0 +1,1416 @@
+[
+  {
+    "year": "1956",
+    "player": "Stanley Matthews",
+    "placement": 1,
+    "team": "Blackpool",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1956",
+    "player": "Alfredo Di Stéfano",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1956",
+    "player": "Raymond Kopa",
+    "placement": 3,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1957",
+    "player": "Alfredo Di Stéfano (1)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1957",
+    "player": "Billy Wright",
+    "placement": 2,
+    "team": "Wolverhampton Wanderers",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1958",
+    "player": "Raymond Kopa",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1958",
+    "player": "Helmut Rahn",
+    "placement": 2,
+    "team": "Rot-Weiss Essen",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1958",
+    "player": "Just Fontaine",
+    "placement": 3,
+    "team": "Reims",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1959",
+    "player": "Alfredo Di Stéfano (2)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1959",
+    "player": "Raymond Kopa",
+    "placement": 2,
+    "team": "Reims",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1959",
+    "player": "John Charles",
+    "placement": 3,
+    "team": "Juventus",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1960",
+    "player": "Luis Suárez",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1960",
+    "player": "Ferenc Puskás",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1960",
+    "player": "Uwe Seeler",
+    "placement": 3,
+    "team": "Hamburger SV",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1961",
+    "player": "Omar Sívori",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1961",
+    "player": "Luis Suárez",
+    "placement": 2,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1961",
+    "player": "Johnny Haynes",
+    "placement": 3,
+    "team": "Fulham",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1962",
+    "player": "Josef Masopust",
+    "placement": 1,
+    "team": "Dukla Prague",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1962",
+    "player": "Eusébio",
+    "placement": 2,
+    "team": "Benfica",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1962",
+    "player": "Karl-Heinz Schnellinger",
+    "placement": 3,
+    "team": "1. FC Köln",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1963",
+    "player": "Lev Yashin",
+    "placement": 1,
+    "team": "Dynamo Moscow",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1963",
+    "player": "Gianni Rivera",
+    "placement": 2,
+    "team": "Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1963",
+    "player": "Jimmy Greaves",
+    "placement": 3,
+    "team": "Tottenham Hotspur",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1964",
+    "player": "Denis Law",
+    "placement": 1,
+    "team": "Manchester United",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1964",
+    "player": "Luis Suárez",
+    "placement": 2,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1964",
+    "player": "Amancio",
+    "placement": 3,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1965",
+    "player": "Eusébio",
+    "placement": 1,
+    "team": "Benfica",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1965",
+    "player": "Giacinto Facchetti",
+    "placement": 2,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1965",
+    "player": "Luis Suárez",
+    "placement": 3,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1966",
+    "player": "Bobby Charlton",
+    "placement": 1,
+    "team": "Manchester United",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1966",
+    "player": "Eusébio",
+    "placement": 2,
+    "team": "Benfica",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1966",
+    "player": "Franz Beckenbauer",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1967",
+    "player": "Flórián Albert",
+    "placement": 1,
+    "team": "Ferencváros",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1967",
+    "player": "Bobby Charlton",
+    "placement": 2,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1967",
+    "player": "Jimmy Johnstone",
+    "placement": 3,
+    "team": "Celtic",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1968",
+    "player": "George Best",
+    "placement": 1,
+    "team": "Manchester United",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1968",
+    "player": "Bobby Charlton",
+    "placement": 2,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1968",
+    "player": "Dragan Džajić",
+    "placement": 3,
+    "team": "Red Star Belgrade",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1969",
+    "player": "Gianni Rivera",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1969",
+    "player": "Gigi Riva",
+    "placement": 2,
+    "team": "Cagliari",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1969",
+    "player": "Gerd Müller",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1970",
+    "player": "Gerd Müller",
+    "placement": 1,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1970",
+    "player": "Bobby Moore",
+    "placement": 2,
+    "team": "West Ham United",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1970",
+    "player": "Gigi Riva",
+    "placement": 3,
+    "team": "Cagliari",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1971",
+    "player": "Johan Cruyff (1)",
+    "placement": 1,
+    "team": "Ajax",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1971",
+    "player": "Sandro Mazzola",
+    "placement": 2,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1971",
+    "player": "George Best",
+    "placement": 3,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1972",
+    "player": "Franz Beckenbauer (1)",
+    "placement": 1,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1973",
+    "player": "Johan Cruyff (2)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1973",
+    "player": "Dino Zoff",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1973",
+    "player": "Gerd Müller",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1974",
+    "player": "Johan Cruyff (3)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1974",
+    "player": "Franz Beckenbauer",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1974",
+    "player": "Kazimierz Deyna",
+    "placement": 3,
+    "team": "Legia Warsaw",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1975",
+    "player": "Oleg Blokhin",
+    "placement": 1,
+    "team": "Dynamo Kyiv",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1975",
+    "player": "Franz Beckenbauer",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1975",
+    "player": "Johan Cruyff",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1976",
+    "player": "Franz Beckenbauer (2)",
+    "placement": 1,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1976",
+    "player": "Rob Rensenbrink",
+    "placement": 2,
+    "team": "Anderlecht",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1976",
+    "player": "Ivo Viktor",
+    "placement": 3,
+    "team": "Dukla Prague",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1977",
+    "player": "Allan Simonsen",
+    "placement": 1,
+    "team": "Borussia Mönchengladbach",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1977",
+    "player": "Kevin Keegan",
+    "placement": 2,
+    "team": "Hamburger SV",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1977",
+    "player": "Michel Platini",
+    "placement": 3,
+    "team": "Nancy",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1978",
+    "player": "Kevin Keegan (1)",
+    "placement": 1,
+    "team": "Hamburger SV",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1978",
+    "player": "Hans Krankl",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1978",
+    "player": "Rob Rensenbrink",
+    "placement": 3,
+    "team": "Anderlecht",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1979",
+    "player": "Kevin Keegan (2)",
+    "placement": 1,
+    "team": "Hamburger SV",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1979",
+    "player": "Karl-Heinz Rummenigge",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1979",
+    "player": "Ruud Krol",
+    "placement": 3,
+    "team": "Ajax",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1980",
+    "player": "Karl-Heinz Rummenigge (1)",
+    "placement": 1,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1980",
+    "player": "Bernd Schuster",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1980",
+    "player": "Michel Platini",
+    "placement": 3,
+    "team": "Saint-Étienne",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1981",
+    "player": "Karl-Heinz Rummenigge (2)",
+    "placement": 1,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1981",
+    "player": "Paul Breitner",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1981",
+    "player": "Bernd Schuster",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1982",
+    "player": "Paolo Rossi",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1982",
+    "player": "Alain Giresse",
+    "placement": 2,
+    "team": "Bordeaux",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1982",
+    "player": "Zbigniew Boniek",
+    "placement": 3,
+    "team": "Juventus",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1983",
+    "player": "Michel Platini (1)",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1983",
+    "player": "Kenny Dalglish",
+    "placement": 2,
+    "team": "Liverpool",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1983",
+    "player": "Allan Simonsen",
+    "placement": 3,
+    "team": "Vejle",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1984",
+    "player": "Michel Platini (2)",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1984",
+    "player": "Jean Tigana",
+    "placement": 2,
+    "team": "Bordeaux",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1984",
+    "player": "Preben Elkjær",
+    "placement": 3,
+    "team": "Hellas Verona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1985",
+    "player": "Michel Platini (3)",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1985",
+    "player": "Preben Elkjær",
+    "placement": 2,
+    "team": "Hellas Verona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1985",
+    "player": "Bernd Schuster",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1986",
+    "player": "Igor Belanov",
+    "placement": 1,
+    "team": "Dynamo Kyiv",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1986",
+    "player": "Gary Lineker",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1986",
+    "player": "Emilio Butragueño",
+    "placement": 3,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1987",
+    "player": "Ruud Gullit",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1987",
+    "player": "Paulo Futre",
+    "placement": 2,
+    "team": "Atlético Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1987",
+    "player": "Emilio Butragueño",
+    "placement": 3,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1988",
+    "player": "Marco van Basten (1)",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1988",
+    "player": "Ruud Gullit",
+    "placement": 2,
+    "team": "Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1988",
+    "player": "Frank Rijkaard",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1989",
+    "player": "Marco van Basten (2)",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1989",
+    "player": "Franco Baresi",
+    "placement": 2,
+    "team": "Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1989",
+    "player": "Frank Rijkaard",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1990",
+    "player": "Lothar Matthäus",
+    "placement": 1,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1990",
+    "player": "Salvatore Schillaci",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1990",
+    "player": "Andreas Brehme",
+    "placement": 3,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1991",
+    "player": "Jean-Pierre Papin",
+    "placement": 1,
+    "team": "Marseille",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1992",
+    "player": "Marco van Basten (3)",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1992",
+    "player": "Hristo Stoichkov",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1992",
+    "player": "Dennis Bergkamp",
+    "placement": 3,
+    "team": "Ajax",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1993",
+    "player": "Roberto Baggio",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1993",
+    "player": "Dennis Bergkamp",
+    "placement": 2,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1993",
+    "player": "Eric Cantona",
+    "placement": 3,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1994",
+    "player": "Hristo Stoichkov",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1994",
+    "player": "Roberto Baggio",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1994",
+    "player": "Paolo Maldini",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1995",
+    "player": "George Weah",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1995",
+    "player": "Jürgen Klinsmann",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1995",
+    "player": "Jari Litmanen",
+    "placement": 3,
+    "team": "Ajax",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1996",
+    "player": "Matthias Sammer",
+    "placement": 1,
+    "team": "Borussia Dortmund",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1996",
+    "player": "Ronaldo",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1996",
+    "player": "Alan Shearer",
+    "placement": 3,
+    "team": "Newcastle United",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1997",
+    "player": "Ronaldo (1)",
+    "placement": 1,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1997",
+    "player": "Predrag Mijatović",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1997",
+    "player": "Zinedine Zidane",
+    "placement": 3,
+    "team": "Juventus",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1998",
+    "player": "Zinedine Zidane",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1998",
+    "player": "Davor Šuker",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1998",
+    "player": "Ronaldo",
+    "placement": 3,
+    "team": "Inter Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "1999",
+    "player": "Rivaldo",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "1999",
+    "player": "David Beckham",
+    "placement": 2,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "1999",
+    "player": "Andriy Shevchenko",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2000",
+    "player": "Luís Figo",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2000",
+    "player": "Zinedine Zidane",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2000",
+    "player": "Andriy Shevchenko",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2001",
+    "player": "Michael Owen",
+    "placement": 1,
+    "team": "Liverpool",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2001",
+    "player": "Raúl",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2001",
+    "player": "Oliver Kahn",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2002",
+    "player": "Ronaldo (2)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2002",
+    "player": "Roberto Carlos",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2002",
+    "player": "Oliver Kahn",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2003",
+    "player": "Pavel Nedvěd",
+    "placement": 1,
+    "team": "Juventus",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2003",
+    "player": "Thierry Henry",
+    "placement": 2,
+    "team": "Arsenal",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2003",
+    "player": "Paolo Maldini",
+    "placement": 3,
+    "team": "Milan",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2004",
+    "player": "Andriy Shevchenko",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2004",
+    "player": "Deco",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2004",
+    "player": "Ronaldinho",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2005",
+    "player": "Ronaldinho",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2005",
+    "player": "Frank Lampard",
+    "placement": 2,
+    "team": "Chelsea",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2005",
+    "player": "Steven Gerrard",
+    "placement": 3,
+    "team": "Liverpool",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2006",
+    "player": "Fabio Cannavaro",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2006",
+    "player": "Gianluigi Buffon",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2006",
+    "player": "Thierry Henry",
+    "placement": 3,
+    "team": "Arsenal",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2007",
+    "player": "Kaká",
+    "placement": 1,
+    "team": "Milan",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2007",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Manchester United",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2007",
+    "player": "Lionel Messi",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2008",
+    "player": "Cristiano Ronaldo (1)",
+    "placement": 1,
+    "team": "Manchester United",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2008",
+    "player": "Lionel Messi",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2008",
+    "player": "Fernando Torres",
+    "placement": 3,
+    "team": "Liverpool",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2009",
+    "player": "Lionel Messi (1)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2009",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2009",
+    "player": "Xavi",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2010",
+    "player": "Lionel Messi (2)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2010",
+    "player": "Andrés Iniesta",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2010",
+    "player": "Xavi",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2011",
+    "player": "Lionel Messi (3)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2011",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2011",
+    "player": "Xavi",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2012",
+    "player": "Lionel Messi (4)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2012",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2012",
+    "player": "Andrés Iniesta",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2013",
+    "player": "Cristiano Ronaldo (2)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2013",
+    "player": "Lionel Messi",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2013",
+    "player": "Franck Ribéry",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2014",
+    "player": "Cristiano Ronaldo (3)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2014",
+    "player": "Lionel Messi",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2014",
+    "player": "Manuel Neuer",
+    "placement": 3,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2015",
+    "player": "Lionel Messi (5)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2015",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2015",
+    "player": "Neymar",
+    "placement": 3,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2016",
+    "player": "Cristiano Ronaldo (4)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2016",
+    "player": "Lionel Messi",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2016",
+    "player": "Antoine Griezmann",
+    "placement": 3,
+    "team": "Atlético Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2017",
+    "player": "Cristiano Ronaldo (5)",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2017",
+    "player": "Lionel Messi",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2017",
+    "player": "Neymar",
+    "placement": 3,
+    "team": "Paris Saint-Germain",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2018",
+    "player": "Luka Modrić",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2018",
+    "player": "Cristiano Ronaldo",
+    "placement": 2,
+    "team": "Juventus",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2018",
+    "player": "Antoine Griezmann",
+    "placement": 3,
+    "team": "Atlético Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2019",
+    "player": "Lionel Messi (6)",
+    "placement": 1,
+    "team": "Barcelona",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2019",
+    "player": "Virgil van Dijk",
+    "placement": 2,
+    "team": "Liverpool",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2019",
+    "player": "Cristiano Ronaldo",
+    "placement": 3,
+    "team": "Juventus",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2021",
+    "player": "Lionel Messi (7)",
+    "placement": 1,
+    "team": "Paris Saint-Germain",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2021",
+    "player": "Robert Lewandowski",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2021",
+    "player": "Jorginho",
+    "placement": 3,
+    "team": "Chelsea",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2022",
+    "player": "Karim Benzema",
+    "placement": 1,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2022",
+    "player": "Sadio Mané",
+    "placement": 2,
+    "team": "Bayern Munich",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2022",
+    "player": "Kevin De Bruyne",
+    "placement": 3,
+    "team": "Manchester City",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2023",
+    "player": "Lionel Messi (8)",
+    "placement": 1,
+    "team": "Inter Miami",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2023",
+    "player": "Erling Haaland",
+    "placement": 2,
+    "team": "Manchester City",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2023",
+    "player": "Kylian Mbappé",
+    "placement": 3,
+    "team": "Paris Saint-Germain",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2024",
+    "player": "Rodri",
+    "placement": 1,
+    "team": "Manchester City",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2024",
+    "player": "Vinícius Júnior",
+    "placement": 2,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2024",
+    "player": "Jude Bellingham",
+    "placement": 3,
+    "team": "Real Madrid",
+    "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2025",
+    "player": "Ousmane Dembélé",
+    "placement": 1,
+    "team": "Paris Saint-Germain",
+    "award": "Ballon d'Or Win"
+  },
+  {
+    "year": "2025",
+    "player": "Lamine Yamal",
+    "placement": 2,
+    "team": "Barcelona",
+    "award": "Ballon d'Or 2nd Place"
+  },
+  {
+    "year": "2025",
+    "player": "Vitinha",
+    "placement": 3,
+    "team": "Paris Saint-Germain",
+    "award": "Ballon d'Or 3rd Place"
+  }
+]

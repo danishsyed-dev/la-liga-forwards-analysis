@@ -59,3 +59,6 @@ outputs/*.csv
 
 # Logs
 *.log
+
+# Data pipeline scrape summaries (not actual data)
+data/raw/fbref/_scrape_summary.json

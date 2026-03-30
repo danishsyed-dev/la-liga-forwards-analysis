@@ -1,0 +1,709 @@
+[
+  {
+    "season": "1929",
+    "player": "Paco Bienzobas",
+    "team": "Real Sociedad",
+    "goals": 14,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1929–30",
+    "player": "Guillermo Gorostiza",
+    "team": "Athletic Bilbao",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1930–31",
+    "player": "Bata",
+    "team": "Athletic Bilbao",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1931–32",
+    "player": "Guillermo Gorostiza",
+    "team": "Athletic Bilbao",
+    "goals": 12,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1932–33",
+    "player": "Manuel Olivares",
+    "team": "Real Madrid",
+    "goals": 16,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1933–34",
+    "player": "Isidro Lángara",
+    "team": "Oviedo",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1934–35",
+    "player": "Isidro Lángara",
+    "team": "Oviedo",
+    "goals": 26,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1935–36",
+    "player": "Isidro Lángara",
+    "team": "Oviedo",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1939–40",
+    "player": "Victorio Unamuno",
+    "team": "Athletic Bilbao",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1940–41",
+    "player": "Pruden",
+    "team": "Atlético Madrid",
+    "goals": 30,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1941–42",
+    "player": "Mundo",
+    "team": "Valencia",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1942–43",
+    "player": "Mariano Martín",
+    "team": "Barcelona",
+    "goals": 32,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1943–44",
+    "player": "Mundo",
+    "team": "Valencia",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1944–45",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1945–46",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1946–47",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 34,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1947–48",
+    "player": "Pahiño",
+    "team": "Celta Vigo",
+    "goals": 23,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1948–49",
+    "player": "César",
+    "team": "Barcelona",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1949–50",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1950–51",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 38,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1951–52",
+    "player": "Pahiño",
+    "team": "Real Madrid",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1952–53",
+    "player": "Telmo Zarra",
+    "team": "Athletic Bilbao",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1953–54",
+    "player": "Alfredo Di Stéfano",
+    "team": "Real Madrid",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1954–55",
+    "player": "Juan Arza",
+    "team": "Sevilla",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1955–56",
+    "player": "Alfredo Di Stéfano",
+    "team": "Real Madrid",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1956–57",
+    "player": "Alfredo Di Stéfano",
+    "team": "Real Madrid",
+    "goals": 31,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1957–58",
+    "player": "Ricardo Alós",
+    "team": "Valencia",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1957–58",
+    "player": "Manuel Badenes",
+    "team": "Valladolid",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1957–58",
+    "player": "Alfredo Di Stéfano",
+    "team": "Real Madrid",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1958–59",
+    "player": "Alfredo Di Stéfano",
+    "team": "Real Madrid",
+    "goals": 23,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1959–60",
+    "player": "Ferenc Puskás",
+    "team": "Real Madrid",
+    "goals": 26,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1960–61",
+    "player": "Ferenc Puskás",
+    "team": "Real Madrid",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1961–62",
+    "player": "Juan Seminario",
+    "team": "Zaragoza",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1962–63",
+    "player": "Ferenc Puskás",
+    "team": "Real Madrid",
+    "goals": 26,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1963–64",
+    "player": "Ferenc Puskás",
+    "team": "Real Madrid",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1964–65",
+    "player": "Cayetano Ré",
+    "team": "Barcelona",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1965–66",
+    "player": "Vavá II",
+    "team": "Elche",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1966–67",
+    "player": "Waldo",
+    "team": "Valencia",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1967–68",
+    "player": "Fidel Uriarte",
+    "team": "Athletic Bilbao",
+    "goals": 22,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1968–69",
+    "player": "Amancio",
+    "team": "Real Madrid",
+    "goals": 14,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1968–69",
+    "player": "José Eulogio Gárate",
+    "team": "Atlético Madrid",
+    "goals": 14,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1969–70",
+    "player": "Amancio",
+    "team": "Real Madrid",
+    "goals": 16,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1969–70",
+    "player": "Luis Aragonés",
+    "team": "Atlético Madrid",
+    "goals": 16,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1969–70",
+    "player": "José Eulogio Gárate",
+    "team": "Atlético Madrid",
+    "goals": 16,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1970–71",
+    "player": "José Eulogio Gárate",
+    "team": "Atlético Madrid",
+    "goals": 17,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1970–71",
+    "player": "Carles Rexach",
+    "team": "Barcelona",
+    "goals": 17,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1971–72",
+    "player": "Enrique Porta",
+    "team": "Granada",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1972–73",
+    "player": "Marianín",
+    "team": "Oviedo",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1973–74",
+    "player": "Quini",
+    "team": "Sporting Gijón",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1974–75",
+    "player": "Carlos",
+    "team": "Athletic Bilbao",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1975–76",
+    "player": "Quini",
+    "team": "Sporting Gijón",
+    "goals": 18,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1976–77",
+    "player": "Mario Kempes",
+    "team": "Valencia",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1977–78",
+    "player": "Mario Kempes",
+    "team": "Valencia",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1978–79",
+    "player": "Hans Krankl",
+    "team": "Barcelona",
+    "goals": 29,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1979–80",
+    "player": "Quini",
+    "team": "Sporting Gijón",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1980–81",
+    "player": "Quini",
+    "team": "Barcelona",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1981–82",
+    "player": "Quini",
+    "team": "Barcelona",
+    "goals": 26,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1982–83",
+    "player": "Poli Rincón",
+    "team": "Real Betis",
+    "goals": 20,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1983–84",
+    "player": "Jorge da Silva",
+    "team": "Valladolid",
+    "goals": 17,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1983–84",
+    "player": "Juanito",
+    "team": "Real Madrid",
+    "goals": 17,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1984–85",
+    "player": "Hugo Sánchez",
+    "team": "Atlético Madrid",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1985–86",
+    "player": "Hugo Sánchez",
+    "team": "Real Madrid",
+    "goals": 22,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1986–87",
+    "player": "Hugo Sánchez",
+    "team": "Real Madrid",
+    "goals": 34,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1987–88",
+    "player": "Hugo Sánchez",
+    "team": "Real Madrid",
+    "goals": 29,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1988–89",
+    "player": "Baltazar",
+    "team": "Atlético Madrid",
+    "goals": 35,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1989–90",
+    "player": "Hugo Sánchez",
+    "team": "Real Madrid",
+    "goals": 38,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1990–91",
+    "player": "Emilio Butragueño",
+    "team": "Real Madrid",
+    "goals": 19,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1991–92",
+    "player": "Manolo",
+    "team": "Atlético Madrid",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1992–93",
+    "player": "Bebeto",
+    "team": "Deportivo La Coruña",
+    "goals": 29,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1993–94",
+    "player": "Romário",
+    "team": "Barcelona",
+    "goals": 30,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1994–95",
+    "player": "Iván Zamorano",
+    "team": "Real Madrid",
+    "goals": 28,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1995–96",
+    "player": "Juan Antonio Pizzi",
+    "team": "Tenerife",
+    "goals": 31,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1996–97",
+    "player": "Ronaldo",
+    "team": "Barcelona",
+    "goals": 34,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1997–98",
+    "player": "Christian Vieri",
+    "team": "Atlético Madrid",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1998–99",
+    "player": "Raúl",
+    "team": "Real Madrid",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "1999–2000",
+    "player": "Salva",
+    "team": "Racing Santander",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2000–01",
+    "player": "Raúl",
+    "team": "Real Madrid",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2001–02",
+    "player": "Diego Tristán",
+    "team": "Deportivo La Coruña",
+    "goals": 21,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2002–03",
+    "player": "Roy Makaay",
+    "team": "Deportivo La Coruña",
+    "goals": 29,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2003–04",
+    "player": "Ronaldo",
+    "team": "Real Madrid",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2004–05",
+    "player": "Diego Forlán",
+    "team": "Villarreal",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2005–06",
+    "player": "Samuel Eto'o",
+    "team": "Barcelona",
+    "goals": 26,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2006–07",
+    "player": "Ruud van Nistelrooy",
+    "team": "Real Madrid",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2007–08",
+    "player": "Dani Güiza",
+    "team": "Mallorca",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2008–09",
+    "player": "Diego Forlán",
+    "team": "Atlético Madrid",
+    "goals": 32,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2009–10",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 34,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2010–11",
+    "player": "Cristiano Ronaldo",
+    "team": "Real Madrid",
+    "goals": 40,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2011–12",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 50,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2012–13",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 46,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2013–14",
+    "player": "Cristiano Ronaldo",
+    "team": "Real Madrid",
+    "goals": 31,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2014–15",
+    "player": "Cristiano Ronaldo",
+    "team": "Real Madrid",
+    "goals": 48,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2015–16",
+    "player": "Luis Suárez",
+    "team": "Barcelona",
+    "goals": 40,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2016–17",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 37,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2017–18",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 34,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2018–19",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 36,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2019–20",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 25,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2020–21",
+    "player": "Lionel Messi",
+    "team": "Barcelona",
+    "goals": 30,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2021–22",
+    "player": "Karim Benzema",
+    "team": "Real Madrid",
+    "goals": 27,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2022–23",
+    "player": "Robert Lewandowski",
+    "team": "Barcelona",
+    "goals": 23,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2023–24",
+    "player": "Artem Dovbyk",
+    "team": "Girona",
+    "goals": 24,
+    "award": "La Liga Golden Boot"
+  },
+  {
+    "season": "2024–25",
+    "player": "Kylian Mbappé",
+    "team": "Real Madrid",
+    "goals": 31,
+    "award": "La Liga Golden Boot"
+  }
+]
