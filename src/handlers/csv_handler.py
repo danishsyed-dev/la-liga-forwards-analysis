@@ -481,7 +481,7 @@ def transform_football_stats_data(df: pd.DataFrame) -> Dict[str, Any]:
         # Create a single season entry with available data
         if goals > 0 or assists > 0:
             season = {
-                'season': '2022/2023',  # Based on your CSV filename
+                'season': 'Unknown',
                 'goals': goals,
                 'assists': assists,
                 'awards': [],
@@ -491,12 +491,7 @@ def transform_football_stats_data(df: pd.DataFrame) -> Dict[str, Any]:
                 'squad': squad
             }
             
-            # Add some basic awards based on performance
-            if goals >= 20:
-                season['awards'].append('Top Scorer Candidate')
-            if assists >= 10:
-                season['awards'].append('Top Assists Provider')
-            
+
             career_data['seasons'].append(season)
         
         # Add empty career awards for now

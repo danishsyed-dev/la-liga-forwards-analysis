@@ -135,5 +135,103 @@ class TestPlayersData:
             assert points > 0, f"Award '{award}' should have positive points"
 
 
+class TestScoreEdgeCases:
+    """Test edge cases in score calculation."""
+
+    def test_score_with_missing_season_keys(self):
+        """Scoring should handle seasons with minimal keys via .get() defaults."""
+        player = {
+            'career_goals': 50,
+            'seasons': [
+                {
+                    'season': '2020/2021',
+                    'goals': 25,
+                    'assists': 12,
+                    # No 'awards', 'team_achievements', 'cup_final_winner', 'cl_achievements'
+                }
+            ],
+            'career_awards': [],
+            'total_la_liga_titles': 0,
+            'total_champions_league_titles': 0,
+        }
+        score = calculate_player_score(player, points_system)
+        assert isinstance(score, int)
+        assert score > 0  # Should get points for 20+ goals and 10+ assists
+
+    def test_score_with_zero_goals_zero_assists(self):
+        """Player with zero stats should only get points from titles/awards."""
+        player = {
+            'career_goals': 0,
+            'seasons': [
+                {
+                    'season': '2020/2021',
+                    'goals': 0,
+                    'assists': 0,
+                    'awards': [],
+                    'team_achievements': [],
+                    'cup_final_winner': False,
+                    'cl_achievements': [],
+                }
+            ],
+            'career_awards': [],
+            'total_la_liga_titles': 2,
+            'total_champions_league_titles': 0,
+        }
+        score = calculate_player_score(player, points_system)
+        expected = 2 * points_system.get('La Liga Title', 0)
+        assert score == expected
+
+    def test_score_does_not_double_count_ballon_dor(self):
+        """Ballon d'Or in season awards should not be double-counted with career awards."""
+        player = {
+            'career_goals': 50,
+            'seasons': [
+                {
+                    'season': '2020/2021',
+                    'goals': 30,
+                    'assists': 5,
+                    'awards': ["Ballon d'Or Win"],  # Should be skipped in season loop
+                    'team_achievements': [],
+                    'cup_final_winner': False,
+                    'cl_achievements': [],
+                }
+            ],
+            'career_awards': ["Ballon d'Or Win"],  # This is where it's counted
+            'total_la_liga_titles': 0,
+            'total_champions_league_titles': 0,
+        }
+        score = calculate_player_score(player, points_system)
+        # Should count Ballon d'Or only once (from career_awards)
+        ballon_dor_points = points_system.get("Ballon d'Or Win", 0)
+        # Verify it's not double-counted
+        player_no_season_ballon = {
+            **player,
+            'seasons': [
+                {**player['seasons'][0], 'awards': []}
+            ],
+        }
+        score_without = calculate_player_score(player_no_season_ballon, points_system)
+        assert score == score_without  # Same score since Ballon d'Or is skipped in season loop
+
+    def test_score_with_no_seasons(self):
+        """Player with no seasons should still get career-level points."""
+        player = {
+            'career_goals': 250,
+            'seasons': [],
+            'career_awards': ["Ballon d'Or Win"],
+            'total_la_liga_titles': 5,
+            'total_champions_league_titles': 3,
+        }
+        score = calculate_player_score(player, points_system)
+        expected = (
+            points_system.get('200+ La Liga Goals', 0)
+            + points_system.get("Ballon d'Or Win", 0)
+            + 5 * points_system.get('La Liga Title', 0)
+            + 3 * points_system.get('Champions League Win', 0)
+        )
+        assert score == expected
+
+
 if __name__ == '__main__':
     pytest.main([__file__, '-v'])
+

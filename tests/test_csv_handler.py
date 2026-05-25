@@ -174,5 +174,53 @@ class TestCSVSecurityHardening:
         assert "Maximum allowed size" in message
 
 
+class TestNoFakeAwards:
+    """Regression tests ensuring no fake award names are injected."""
+
+    def test_transform_football_stats_no_fake_awards(self):
+        """transform_football_stats_data should not add non-existent award names."""
+        from handlers.csv_handler import transform_football_stats_data
+
+        df = pd.DataFrame({
+            'Player': ['Test Striker'],
+            'Squad': ['Test FC'],
+            'Goals': [30],
+            'Assists': [15],
+            'Pos': ['FW'],
+        })
+
+        processed = transform_football_stats_data(df)
+        assert 'Test Striker' in processed
+
+        # Check all season awards are from the real scoring system
+        from core.players_data import points_system
+        valid_awards = set(points_system.keys())
+
+        for season in processed['Test Striker'].get('seasons', []):
+            for award in season.get('awards', []):
+                assert award in valid_awards or award == '', (
+                    f"Fake award '{award}' found — not in scoring system"
+                )
+
+    def test_football_stats_awards_are_empty(self):
+        """Football stats format should produce empty award lists (no fake awards)."""
+        from handlers.csv_handler import transform_football_stats_data
+
+        df = pd.DataFrame({
+            'Player': ['Goal Machine'],
+            'Squad': ['FC Example'],
+            'Goals': [45],
+            'Assists': [20],
+            'Pos': ['FW'],
+        })
+
+        processed = transform_football_stats_data(df)
+        for season in processed['Goal Machine'].get('seasons', []):
+            assert season.get('awards', []) == [], (
+                f"Expected empty awards but got: {season['awards']}"
+            )
+
+
 if __name__ == '__main__':
     pytest.main([__file__, '-v'])
+

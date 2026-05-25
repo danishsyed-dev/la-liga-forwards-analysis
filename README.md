@@ -73,7 +73,8 @@ la-liga-forwards-analysis/
 │       ├── bar_chart.py                 # Bar Chart generation logic
 │       └── radar_diagram.py             # Multi-metric Radar comparison logic
 ├── 📂 scripts/                          # Data pipeline scripts
-│   ├── config.py                        # Centralised configuration (URLs, paths, points system)
+│   ├── main.py                          # Pipeline orchestrator (runs all steps end-to-end)
+│   ├── config.py                        # Centralised configuration (URLs, paths, seasons)
 │   ├── scrape_wikipedia.py              # Wikipedia scraper (Pichichi, Ballon d'Or, titles, CL)
 │   ├── scrape_fbref.py                  # FBref Selenium scraper (Cloudflare-protected)
 │   ├── import_fbref_csv.py              # Manual FBref CSV importer (recommended workflow)
@@ -87,15 +88,18 @@ la-liga-forwards-analysis/
 │   │   └── players_summary.csv          # Quick-view summary table
 │   └── verified_players.csv             # Legacy built-in dataset
 ├── 📂 tests/                            # Automated Pytest suite
-│   ├── test_analysis.py                 # Unit tests for scoring logic accuracy
-│   └── test_csv_handler.py              # Unit tests for CSV validation
+│   ├── test_analysis.py                 # Unit tests for scoring logic + edge cases
+│   ├── test_csv_handler.py              # Unit tests for CSV validation + fake-award regression
+│   ├── test_builtin_data_handler.py     # Tests for built-in data loading
+│   └── test_players_data.py             # Tests for JSON loading + fallback behavior
 ├── 📂 docs/                             # GitHub Pages content (auto-generated)
 ├── 📂 .github/workflows/               # CI/CD pipelines
 │   └── deploy.yml                       # Build, test, deploy + monthly data refresh
 ├── 📄 app.py                            # Streamlit web app entry point
 ├── 📄 generate_static.py                # Converts analysis into static interactive HTML
 ├── 📄 pyproject.toml                    # Modern Python tooling configs
-└── 📄 requirements.txt                  # Python dependencies
+├── 📄 requirements.txt                  # Core Python dependencies
+└── 📄 requirements-scraping.txt         # Scraping dependencies (optional)
 ```
 
 ---
@@ -132,6 +136,11 @@ The project uses a **two-source extraction pipeline** to gather verified data:
 ### Running the Pipeline
 
 ```bash
+# Run the full pipeline end-to-end
+python scripts/main.py
+
+# Or run steps individually:
+
 # Step 1: Scrape Wikipedia awards (automated)
 python scripts/scrape_wikipedia.py --force
 
@@ -224,7 +233,11 @@ python -m venv .venv
 source .venv/bin/activate  # (.venv\Scripts\activate on Windows)
 
 # Install dependencies
+# Install core dependencies
 pip install -r requirements.txt
+
+# Install scraping dependencies (optional, only for data pipeline)
+pip install -r requirements-scraping.txt
 
 # Run tests
 pytest tests/ -v

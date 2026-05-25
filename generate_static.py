@@ -291,6 +291,11 @@ def generate_html_page():
     radar_chart = create_radar_chart(stats_df)
     scatter_chart = create_scatter_plot(stats_df)
     achievements_chart = create_achievements_chart(stats_df)
+
+    # Dynamic hero stats
+    num_players = len(scores_df)
+    total_career_goals = int(stats_df['Career Goals'].sum())
+    total_titles = int(stats_df['La Liga Titles'].sum() + stats_df['Champions League Titles'].sum())
     
     # Convert charts to HTML
     bar_html = pyo.plot(bar_chart, output_type='div', include_plotlyjs=False)
@@ -540,25 +545,25 @@ def generate_html_page():
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-3 col-sm-6 mb-3">
                         <div class="stats-card">
-                            <span class="stats-number">7</span>
+                            <span class="stats-number">{num_players}</span>
                             <span class="stats-label">Legendary Players</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-3">
                         <div class="stats-card">
-                            <span class="stats-number">15+</span>
+                            <span class="stats-number">{len(stats_df.columns)}</span>
                             <span class="stats-label">Metrics Analyzed</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-3">
                         <div class="stats-card">
-                            <span class="stats-number">50+</span>
+                            <span class="stats-number">{total_titles}</span>
                             <span class="stats-label">Major Trophies</span>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-3">
                         <div class="stats-card">
-                            <span class="stats-number">1000+</span>
+                            <span class="stats-number">{total_career_goals}</span>
                             <span class="stats-label">Career Goals</span>
                         </div>
                     </div>
@@ -812,7 +817,7 @@ def generate_html_page():
                         </div>
                     </div>
                     <p class="mt-3 mb-0 text-muted">
-                        <small>© 2025 La Liga Forwards Analysis. Made with ❤️ using Python, Plotly & Bootstrap</small>
+                        <small>© 2025–2026 La Liga Forwards Analysis. Made with ❤️ using Python, Plotly & Bootstrap</small>
                     </p>
                 </div>
             </div>
@@ -982,7 +987,7 @@ Your Player Name,150,1,0,0,Add your notes here`
         // Analyze uploaded data
         document.getElementById('analyzeBtn').addEventListener('click', function() {{
             if (window.uploadedData) {{
-                alert('Analysis feature coming soon! For now, please use the Streamlit app for full analysis of uploaded data.');
+                alert('For full analysis of uploaded data, please use the interactive Streamlit app at https://la-liga-forwards-analysis.streamlit.app/');
                 // Future: Process uploaded data and regenerate charts
             }}
         }});

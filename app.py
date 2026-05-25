@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
+import random
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -29,8 +28,6 @@ from handlers.builtin_data_handler import load_verified_builtin_players
 
 def generate_sample_players(num_players: int) -> Dict:
     """Generate sample players for testing"""
-    import random
-    
     sample_names = [
         "Alex Rodriguez", "Marco Silva", "Diego Martinez", "Carlos Fernandez", 
         "Juan Lopez", "Antonio Garcia", "Fernando Torres", "Miguel Angel",
@@ -233,7 +230,9 @@ if st.session_state.get('show_guide', False):
         st.session_state.show_guide = False
         st.rerun()
     
-    st.markdown("---")# File upload section
+    st.markdown("---")
+
+# File upload section
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📁 Data Source")
 
@@ -285,7 +284,7 @@ if data_source == "📊 Upload Custom CSV":
         # Standard template
         template_data = create_csv_template()
         st.download_button(
-            label="� Standard Template",
+            label="📄 Standard Template",
             data=template_data,
             file_name="player_data_template.csv",
             mime="text/csv",
@@ -363,7 +362,6 @@ if data_source == "📊 Upload Custom CSV":
 st.sidebar.markdown("---")
 
 # Calculate scores
-@st.cache_data
 def calculate_all_scores(custom_players=None):
     player_scores = {}
     detailed_stats = {}

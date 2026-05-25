@@ -4,10 +4,15 @@ Configuration for La Liga data scraping pipeline.
 Defines seasons, URLs, directories, and award mappings used by scrapers.
 """
 
+import sys
 from pathlib import Path
 
 # ──────────────────────── Paths ────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
+# Add project root to sys.path so we can import from src/
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_FBREF_DIR = DATA_DIR / "raw" / "fbref"
 RAW_WIKI_DIR = DATA_DIR / "raw" / "wikipedia"
@@ -96,26 +101,4 @@ AWARD_MAP = {
     "Supercopa de España": "Supercopa de España",
     "UEFA Super Cup": "UEFA Super Cup",
     "FIFA Club World Cup": "FIFA Club World Cup",
-}
-
-# ──────────────────────── Points system ────────────────────────
-# This is the canonical scoring definition, shared with src/core/
-POINTS_SYSTEM = {
-    "Ballon d'Or Win": 5,
-    "Ballon d'Or 2nd Place": 3,
-    "Ballon d'Or 3rd Place": 1,
-    "La Liga Title": 1,
-    "Champions League Win": 5,
-    "La Liga Best Player Award": 4,
-    "La Liga Breakthrough Player": 1,
-    "La Liga Golden Boot": 3,
-    "20+ Goal La Liga Season": 2,
-    "Most Assists in La Liga Season": 2,
-    "10+ Assist La Liga Season": 1,
-    "Cup Final Winner": 1,
-    "Other Trophies": 1,
-    "200+ La Liga Goals": 5,
-    "100+ La Liga Goals": 2,
-    "CL Top Scorer": 5,
-    "Most Assists in CL Season": 2,
 }
