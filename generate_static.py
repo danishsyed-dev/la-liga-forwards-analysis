@@ -94,16 +94,13 @@ def calculate_all_scores():
 
 def create_bar_chart(scores_df):
     """Create improved interactive bar chart"""
-    # Add custom colors based on ranking
-    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2']
-    
     fig = px.bar(
         scores_df, 
         x='Player', 
         y='Score',
         title="🏆 La Liga Greatest Forwards - Overall Rankings",
         color='Score',
-        color_continuous_scale='Blues',
+        color_continuous_scale=[[0, '#10b981'], [1, '#d4af37']],
         height=700,
         text='Score'
     )
@@ -118,19 +115,22 @@ def create_bar_chart(scores_df):
     fig.update_layout(
         xaxis_title="<b>Player</b>",
         yaxis_title="<b>Total Points</b>",
-        font=dict(size=14, family="Arial, sans-serif"),
-        title_font_size=24,
+        font=dict(size=13, family="Outfit, sans-serif"),
+        title_font=dict(size=22, family="Playfair Display, Georgia, serif", color="#ffffff"),
         title_x=0.5,
         showlegend=False,
+        template="plotly_dark",
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
         margin=dict(t=80, b=100, l=60, r=60),
         xaxis=dict(
             tickangle=-45,
-            gridcolor='rgba(128,128,128,0.2)'
+            gridcolor='rgba(255,255,255,0.08)',
+            linecolor='rgba(255,255,255,0.15)'
         ),
         yaxis=dict(
-            gridcolor='rgba(128,128,128,0.2)'
+            gridcolor='rgba(255,255,255,0.08)',
+            linecolor='rgba(255,255,255,0.15)'
         )
     )
     return fig
@@ -159,7 +159,7 @@ def create_radar_chart(stats_df):
     # Create radar chart with better colors
     fig = go.Figure()
     
-    colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57']
+    colors = ['#10b981', '#d4af37', '#34d399', '#f59e0b', '#06b6d4']
     
     for i, (_, player_data) in enumerate(normalized_stats.iterrows()):
         fig.add_trace(go.Scatterpolar(
@@ -175,21 +175,28 @@ def create_radar_chart(stats_df):
     
     fig.update_layout(
         polar=dict(
+            bgcolor='rgba(22, 27, 34, 0.5)',
             radialaxis=dict(
                 visible=True,
                 range=[0, 1],
                 tickvals=[0, 0.25, 0.5, 0.75, 1],
-                ticktext=['0%', '25%', '50%', '75%', '100%']
+                ticktext=['0%', '25%', '50%', '75%', '100%'],
+                gridcolor='rgba(255,255,255,0.08)',
+                tickfont=dict(color="#8b949e")
             ),
             angularaxis=dict(
-                tickfont_size=12
+                tickfont_size=12,
+                gridcolor='rgba(255,255,255,0.08)',
+                tickfont=dict(color="#e6edf3")
             )
         ),
         showlegend=True,
         title="🎯 Top 5 Players - Multi-Dimensional Comparison",
         height=800,
-        font=dict(size=14, family="Arial, sans-serif"),
-        title_font_size=24,
+        template="plotly_dark",
+        paper_bgcolor='rgba(0,0,0,0)',
+        font=dict(size=13, family="Outfit, sans-serif"),
+        title_font=dict(size=22, family="Playfair Display, Georgia, serif", color="#ffffff"),
         title_x=0.5,
         legend=dict(
             orientation="h",
@@ -214,7 +221,7 @@ def create_scatter_plot(stats_df):
         title="📈 Career Goals vs Total Score Analysis",
         height=600,
         size_max=30,
-        color_continuous_scale='viridis'
+        color_continuous_scale=[[0, '#10b981'], [1, '#d4af37']]
     )
     
     # Add custom hover template
@@ -229,13 +236,14 @@ def create_scatter_plot(stats_df):
     fig.update_layout(
         xaxis_title="<b>Career Goals in La Liga</b>",
         yaxis_title="<b>Total Score</b>",
-        font=dict(size=14, family="Arial, sans-serif"),
-        title_font_size=20,
+        template="plotly_dark",
+        font=dict(size=13, family="Outfit, sans-serif"),
+        title_font=dict(size=20, family="Playfair Display, Georgia, serif", color="#ffffff"),
         title_x=0.5,
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
-        xaxis=dict(gridcolor='rgba(128,128,128,0.2)'),
-        yaxis=dict(gridcolor='rgba(128,128,128,0.2)')
+        xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+        yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
     )
     
     return fig
@@ -245,14 +253,16 @@ def create_achievements_chart(stats_df):
     awards_cols = ['Ballon d\'Or Wins', 'La Liga Golden Boots', 'La Liga Best Player Awards', 'CL Top Scorer Awards']
     
     fig = go.Figure()
+    colors = ['#d4af37', '#10b981', '#06b6d4', '#6366f1']
     
-    for col in awards_cols:
+    for i, col in enumerate(awards_cols):
         fig.add_trace(go.Bar(
             name=col.replace('Awards', '').replace('Wins', ''),
             x=stats_df['Player'],
             y=stats_df[col],
             text=stats_df[col],
-            textposition='auto'
+            textposition='auto',
+            marker_color=colors[i % len(colors)]
         ))
     
     fig.update_layout(
@@ -261,16 +271,18 @@ def create_achievements_chart(stats_df):
         yaxis_title="<b>Number of Awards</b>",
         barmode='group',
         height=600,
-        font=dict(size=14, family="Arial, sans-serif"),
-        title_font_size=20,
+        template="plotly_dark",
+        font=dict(size=13, family="Outfit, sans-serif"),
+        title_font=dict(size=20, family="Playfair Display, Georgia, serif", color="#ffffff"),
         title_x=0.5,
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)',
         xaxis=dict(
             tickangle=-45,
-            gridcolor='rgba(128,128,128,0.2)'
+            gridcolor='rgba(255,255,255,0.08)',
+            linecolor='rgba(255,255,255,0.15)'
         ),
-        yaxis=dict(gridcolor='rgba(128,128,128,0.2)'),
+        yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
         legend=dict(
             orientation="h",
             yanchor="bottom",
@@ -321,181 +333,235 @@ def generate_html_page():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>⚽ La Liga Greatest Forwards Analysis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         :root {{
-            --primary-color: #1f77b4;
-            --secondary-color: #ff7f0e;
-            --success-color: #2ca02c;
-            --danger-color: #d62728;
-            --dark-color: #2c3e50;
-            --light-bg: #f8f9fa;
+            --primary-color: #10b981; /* Emerald */
+            --secondary-color: #d4af37; /* Gold */
+            --dark-bg: #0e1117; /* Deep charcoal */
+            --card-bg: #161b22; /* Slate card background */
+            --text-color: #e6edf3;
+            --muted-text: #8b949e;
+            --border-color: rgba(255, 255, 255, 0.08);
         }}
         
         body {{
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--light-bg);
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
             line-height: 1.6;
         }}
         
         .hero {{
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
-            color: white;
+            background: linear-gradient(180deg, #161b22 0%, var(--dark-bg) 100%);
+            border-bottom: 1px solid var(--border-color);
             padding: 80px 0;
             margin-bottom: 50px;
             position: relative;
-            overflow: hidden;
         }}
         
-        .hero::before {{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-            animation: float 20s infinite linear;
+        .hero-title {{
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.02em;
         }}
-        
-        @keyframes float {{
-            0% {{ transform: translateY(0px) translateX(0px); }}
-            100% {{ transform: translateY(-100px) translateX(-100px); }}
+
+        .hero-subtitle {{
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: var(--muted-text);
+            max-width: 750px;
+            margin-top: 10px;
         }}
-        
-        .hero-content {{
-            position: relative;
-            z-index: 1;
-        }}
-        
+
         .navbar {{
-            background-color: var(--dark-color) !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background-color: #161b22 !important;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: none;
         }}
         
         .card {{
-            border: none;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
             margin-bottom: 40px;
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }}
         
         .card:hover {{
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.15);
         }}
         
         .card-header {{
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            border-bottom: none;
+            background: #1c2128;
+            border-bottom: 1px solid var(--border-color);
+            color: #ffffff;
             padding: 20px 25px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
         }}
         
         .card-header h3 {{
             margin: 0;
-            font-weight: 600;
-            font-size: 1.3rem;
+            font-weight: 700;
+            font-size: 1.35rem;
         }}
         
         .chart-container {{
-            background: white;
-            border-radius: 15px;
+            background: var(--card-bg);
+            border-radius: 12px;
             padding: 30px;
             margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
         }}
         
         .stats-card {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 15px;
-            padding: 25px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--primary-color);
+            color: var(--text-color);
+            border-radius: 8px;
+            padding: 20px;
             margin-bottom: 20px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }}
+        
+        .stats-card.gold-border {{
+            border-left-color: var(--secondary-color);
         }}
         
         .stats-number {{
-            font-size: 2.5rem;
-            font-weight: bold;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
             display: block;
+            font-variant-numeric: tabular-nums;
         }}
         
         .stats-label {{
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted-text);
+            margin-top: 5px;
         }}
         
         #stats-table {{
             font-size: 0.95rem;
-            border-radius: 10px;
-            overflow: hidden;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            background-color: var(--card-bg);
+            font-variant-numeric: tabular-nums;
         }}
         
         #stats-table th {{
-            background: var(--primary-color);
-            color: white;
+            background: #1c2128;
+            color: #ffffff;
             font-weight: 600;
             border: none;
+            border-bottom: 2px solid var(--border-color);
             padding: 15px;
+            font-family: 'Outfit', sans-serif;
         }}
         
         #stats-table td {{
             padding: 12px 15px;
-            border-color: #e9ecef;
+            border-color: var(--border-color);
+            color: var(--text-color);
         }}
         
         #stats-table tr:hover {{
-            background-color: rgba(31, 119, 180, 0.05);
+            background-color: rgba(255, 255, 255, 0.02) !important;
+        }}
+        
+        .table-striped>tbody>tr:nth-of-type(odd) {{
+            --bs-table-accent-bg: rgba(255, 255, 255, 0.01);
+            color: var(--text-color);
         }}
         
         .scoring-system {{
-            background: linear-gradient(135deg, #2c3e50 0%, #4a6741 100%);
-            color: white;
-            border-radius: 15px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            border-radius: 12px;
             padding: 30px;
         }}
         
         .scoring-system h5 {{
-            color: #ffd700;
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 1.4rem;
             margin-bottom: 20px;
         }}
         
         .scoring-system ul li {{
-            padding: 5px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
         }}
         
         .footer {{
-            background: linear-gradient(135deg, var(--dark-color) 0%, #1a252f 100%);
-            color: white;
+            background: #161b22;
+            color: var(--muted-text);
             padding: 60px 0 40px;
             margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+        }}
+        
+        .footer a {{
+            color: var(--primary-color);
+            text-decoration: none;
+        }}
+        
+        .footer a:hover {{
+            text-decoration: underline;
         }}
         
         .btn-primary {{
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            border: none;
+            background: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            color: #ffffff;
             padding: 12px 30px;
-            border-radius: 25px;
+            border-radius: 6px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }}
         
         .btn-primary:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(31, 119, 180, 0.3);
+            background-color: #059669;
+            border-color: #059669;
+            transform: translateY(-1px);
         }}
         
+        .btn-outline-primary {{
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 6px;
+        }}
+        
+        .btn-outline-primary:hover {{
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: #ffffff;
+        }}
+
         .section-divider {{
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            height: 1px;
+            background: var(--border-color);
             border: none;
-            border-radius: 2px;
             margin: 50px 0;
         }}
         
@@ -503,11 +569,12 @@ def generate_html_page():
             .hero {{
                 padding: 50px 0;
             }}
-            
+            .hero-title {{
+                font-size: 2.5rem;
+            }}
             .chart-container {{
                 padding: 20px 15px;
             }}
-            
             .card-header {{
                 padding: 15px 20px;
             }}
@@ -537,14 +604,15 @@ def generate_html_page():
     <div class="hero" id="overview">
         <div class="hero-content">
             <div class="container text-center">
-                <h1 class="display-3 fw-bold mb-4">
-                    <i class="fas fa-futbol me-3"></i>La Liga Greatest Forwards
+                <h1 class="hero-title">
+                    ⚽ La Liga Greatest Forwards
                 </h1>
-                <p class="lead mb-4 fs-4">Comprehensive Data-Driven Analysis</p>
-                <p class="fs-5 mb-4">Advanced scoring system based on goals, assists, titles, and individual achievements</p>
+                <p class="hero-subtitle mx-auto">
+                    A comprehensive, data-driven analysis of the greatest forwards in La Liga history, ranked using an advanced points scoring algorithm evaluating goals, assists, titles, and individual awards.
+                </p>
                 <div class="row justify-content-center mt-5">
                     <div class="col-md-3 col-sm-6 mb-3">
-                        <div class="stats-card">
+                        <div class="stats-card gold-border">
                             <span class="stats-number">{num_players}</span>
                             <span class="stats-label">Legendary Players</span>
                         </div>
@@ -576,9 +644,9 @@ def generate_html_page():
     <div class="container mb-5" id="upload-section" style="display: none;">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="card border-primary">
-                    <div class="card-header bg-primary text-white">
-                        <h4 class="mb-0"><i class="fas fa-upload me-2"></i>Upload Your Own Data</h4>
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0" style="font-family: 'Playfair Display', serif; font-style: italic;"><i class="fas fa-upload me-2"></i>Upload Your Own Data</h4>
                     </div>
                     <div class="card-body">
                         <div class="mb-3">

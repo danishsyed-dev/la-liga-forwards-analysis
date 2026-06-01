@@ -101,56 +101,99 @@ st.set_page_config(
 # Custom CSS for better styling
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    /* Font family overrides */
+    html, body, [class*="css"], .stApp {
+        font-family: 'Outfit', sans-serif !important;
+    }
+    
     /* Main title styling */
     .main-title {
-        text-align: center;
-        color: #1f77b4;
+        font-family: 'Playfair Display', Georgia, serif;
         font-size: 3rem;
-        margin-bottom: 1rem;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        font-weight: 700;
+        color: #ffffff;
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.02em;
     }
     
     /* Subtitle styling */
     .subtitle {
-        text-align: center;
-        color: #666;
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-        padding: 0 2rem;
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.15rem;
+        font-weight: 300;
+        color: #8b949e;
+        text-align: left;
+        margin-bottom: 2.5rem;
+        max-width: 800px;
+        line-height: 1.6;
     }
     
-    /* Metric cards */
+    /* Custom Metric cards styling */
     .metric-card {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 1.5rem;
-        border-radius: 10px;
-        color: white;
-        text-align: center;
+        background-color: #161b22;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-left: 4px solid #10b981; /* Emerald Green */
+        padding: 1.25rem;
+        border-radius: 8px;
+        color: #e6edf3;
+        text-align: left;
         margin-bottom: 1rem;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        font-family: 'Outfit', sans-serif;
+        transition: transform 0.2s ease, border-color 0.2s ease;
     }
-    
-    /* Chart containers */
-    .chart-container {
-        background: white;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        margin-bottom: 2rem;
+    .metric-card.gold-border {
+        border-left-color: #d4af37; /* Gold */
     }
-    
-    /* Sidebar styling */
-    .sidebar .sidebar-content {
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    .metric-card:hover {
+        transform: translateY(-2px);
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+    .metric-value {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #ffffff;
+        font-variant-numeric: tabular-nums;
+        margin-top: 0.25rem;
+    }
+    .metric-label {
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #8b949e;
     }
     
     /* Custom info boxes */
     .info-box {
-        background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
-        color: white;
-        padding: 1rem;
+        background-color: #161b22;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+        border-left: 4px solid #10b981;
+        color: #e6edf3;
+        padding: 1rem 1.25rem;
         border-radius: 8px;
         margin: 1rem 0;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    /* Chart containers */
+    .chart-container {
+        background: #161b22;
+        padding: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 2rem;
+    }
+    
+    /* Tabular numbers for Streamlit tables */
+    div[data-testid="stTable"] table, div[data-testid="stDataFrame"] table {
+        font-variant-numeric: tabular-nums;
+        font-family: 'Outfit', sans-serif;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -167,9 +210,9 @@ st.markdown("""
 
 # Enhanced sidebar
 st.sidebar.markdown("""
-<div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #1f77b4, #ff7f0e); color: white; border-radius: 10px; margin-bottom: 1rem;">
-    <h3>🎛️ Analysis Controls</h3>
-    <p>Customize your exploration of La Liga's greatest forwards</p>
+<div style="padding: 1.25rem; background-color: #161b22; border-bottom: 2px solid #10b981; border-radius: 8px; margin-bottom: 1.5rem;">
+    <h4 style="font-family: 'Playfair Display', serif; font-style: italic; font-weight: 700; color: #ffffff; margin: 0 0 0.25rem 0; font-size: 1.35rem;">🎛️ Analysis Controls</h4>
+    <p style="font-family: 'Outfit', sans-serif; font-size: 0.85rem; color: #8b949e; margin: 0; font-weight: 300;">Customize your exploration of La Liga's history</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -482,12 +525,19 @@ if chart_type == "Bar Chart":
             y='Score',
             title="La Liga Forwards Total Scores",
             color='Score',
-            color_continuous_scale='viridis'
+            color_continuous_scale=[[0, '#10b981'], [1, '#d4af37']]
         )
         fig.update_layout(
             xaxis_title="Player",
             yaxis_title="Total Points",
-            height=500
+            height=500,
+            template="plotly_dark",
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(family="Outfit, sans-serif", size=13),
+            title_font=dict(family="Playfair Display, serif", size=20, color="#ffffff"),
+            xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+            yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -525,7 +575,7 @@ elif chart_type == "Radar Chart":
         # Create radar chart
         fig = go.Figure()
         
-        colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FECA57', '#FF9F43', '#A55EEA']
+        colors = ['#10b981', '#d4af37', '#34d399', '#f59e0b', '#06b6d4', '#6366f1', '#ec4899']
         
         for i, (_, player_data) in enumerate(normalized_stats.iterrows()):
             fig.add_trace(go.Scatterpolar(
@@ -535,18 +585,34 @@ elif chart_type == "Radar Chart":
                 name=player_data['Player'],
                 line_color=colors[i % len(colors)],
                 fillcolor=colors[i % len(colors)],
-                opacity=0.1
+                opacity=0.15
             ))
         
         fig.update_layout(
             polar=dict(
+                bgcolor='rgba(22, 27, 34, 0.5)',
                 radialaxis=dict(
                     visible=True,
-                    range=[0, 1]
-                )),
+                    range=[0, 1],
+                    gridcolor='rgba(255,255,255,0.08)',
+                    angle=0,
+                    tickangle=0,
+                    tickfont=dict(color="#8b949e")
+                ),
+                angularaxis=dict(
+                    gridcolor='rgba(255,255,255,0.08)',
+                    tickfont=dict(color="#e6edf3", size=11)
+                )
+            ),
             showlegend=True,
-            title="La Liga Forwards Comparison - Radar Chart",
-            height=600
+            title=dict(
+                text="La Liga Forwards Comparison - Radar Chart",
+                font=dict(family="Playfair Display, serif", size=20, color="#ffffff")
+            ),
+            height=600,
+            template="plotly_dark",
+            paper_bgcolor='rgba(0,0,0,0)',
+            font=dict(family="Outfit, sans-serif")
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -578,6 +644,15 @@ elif chart_type == "Detailed Stats":
                 hover_name='Player',
                 title="Goals vs La Liga Titles (Size: CL Titles, Color: Ballon d'Or)"
             )
+            fig_scatter.update_layout(
+                template="plotly_dark",
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font=dict(family="Outfit, sans-serif"),
+                title_font=dict(family="Playfair Display, serif", size=16, color="#ffffff"),
+                xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+                yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
+            )
             st.plotly_chart(fig_scatter, use_container_width=True)
         
         with col2:
@@ -589,7 +664,17 @@ elif chart_type == "Detailed Stats":
                 y='Count',
                 color='Award',
                 title="Individual Awards Comparison",
-                barmode='group'
+                barmode='group',
+                color_discrete_sequence=['#d4af37', '#10b981', '#06b6d4']
+            )
+            fig_awards.update_layout(
+                template="plotly_dark",
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font=dict(family="Outfit, sans-serif"),
+                title_font=dict(family="Playfair Display, serif", size=16, color="#ffffff"),
+                xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+                yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
             )
             st.plotly_chart(fig_awards, use_container_width=True)
         
@@ -634,6 +719,16 @@ elif chart_type == "Season Analysis":
                 y='Goals',
                 title=f"{season_player} - Goals per Season"
             )
+            fig_goals.update_traces(marker_color='#10b981')
+            fig_goals.update_layout(
+                template="plotly_dark",
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font=dict(family="Outfit, sans-serif"),
+                title_font=dict(family="Playfair Display, serif", size=16, color="#ffffff"),
+                xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+                yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
+            )
             st.plotly_chart(fig_goals, use_container_width=True)
         
         with col2:
@@ -642,6 +737,16 @@ elif chart_type == "Season Analysis":
                 x='Season',
                 y='Assists',
                 title=f"{season_player} - Assists per Season"
+            )
+            fig_assists.update_traces(marker_color='#d4af37')
+            fig_assists.update_layout(
+                template="plotly_dark",
+                paper_bgcolor='rgba(0,0,0,0)',
+                plot_bgcolor='rgba(0,0,0,0)',
+                font=dict(family="Outfit, sans-serif"),
+                title_font=dict(family="Playfair Display, serif", size=16, color="#ffffff"),
+                xaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)'),
+                yaxis=dict(gridcolor='rgba(255,255,255,0.08)', linecolor='rgba(255,255,255,0.15)')
             )
             st.plotly_chart(fig_assists, use_container_width=True)
         
@@ -656,11 +761,35 @@ elif chart_type == "Final View":
     total_players = len(scores_df)
     average_score = round(float(scores_df['Score'].mean()), 1)
 
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("🥇 Top Player", top_player)
-    m2.metric("🏆 Top Score", top_score)
-    m3.metric("👥 Players Analyzed", total_players)
-    m4.metric("📈 Average Score", average_score)
+    col1, col2, col3, col4 = st.columns(4)
+    with col1:
+        st.markdown(f"""
+        <div class="metric-card gold-border">
+            <div class="metric-label">🥇 Top Player</div>
+            <div class="metric-value">{top_player}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with col2:
+        st.markdown(f"""
+        <div class="metric-card">
+            <div class="metric-label">🏆 Top Score</div>
+            <div class="metric-value">{top_score}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with col3:
+        st.markdown(f"""
+        <div class="metric-card">
+            <div class="metric-label">👥 Players Analyzed</div>
+            <div class="metric-value">{total_players}</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with col4:
+        st.markdown(f"""
+        <div class="metric-card">
+            <div class="metric-label">📈 Average Score</div>
+            <div class="metric-value">{average_score}</div>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.subheader("🏅 Top 5 Ranking Snapshot")
     top_5_df = scores_df.head(5).copy()
