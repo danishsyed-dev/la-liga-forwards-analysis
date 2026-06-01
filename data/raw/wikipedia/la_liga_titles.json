@@ -33,7 +33,7 @@
   },
   {
     "season": "1936–37",
-    "champion": "League suspended due to Spanish Civil War"
+    "champion": "Not played due to the Spanish Civil War"
   },
   {
     "season": "1939–40",
@@ -377,6 +377,10 @@
   },
   {
     "season": "2024–25",
+    "champion": "Barcelona"
+  },
+  {
+    "season": "2025–26",
     "champion": "Barcelona"
   }
 ]
