@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-06-01 11:23:01",
-    "total_players": 165,
+    "last_updated": "2026-07-01 07:10:19",
+    "total_players": 166,
     "sources": {
       "stats": "FBref.com (Sports Reference / StatsBomb)",
       "awards": "Wikipedia"
@@ -3400,6 +3400,19 @@
       "seasons": [],
       "career_awards": [
         "Ballon d'Or 3rd Place"
+      ],
+      "total_la_liga_titles": 0,
+      "total_champions_league_titles": 0
+    },
+    "To be announced on 26 October 2026": {
+      "career_goals": 0,
+      "team": "",
+      "teams": [],
+      "position": "",
+      "nationality": "",
+      "seasons": [],
+      "career_awards": [
+        "Ballon d'Or Win"
       ],
       "total_la_liga_titles": 0,
       "total_champions_league_titles": 0
