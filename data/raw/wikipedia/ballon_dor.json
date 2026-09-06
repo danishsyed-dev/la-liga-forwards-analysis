@@ -1412,5 +1412,12 @@
     "placement": 3,
     "team": "Paris Saint-Germain",
     "award": "Ballon d'Or 3rd Place"
+  },
+  {
+    "year": "2026",
+    "player": "To be announced on 26 October 2026",
+    "placement": 1,
+    "team": "",
+    "award": "Ballon d'Or Win"
   }
 ]

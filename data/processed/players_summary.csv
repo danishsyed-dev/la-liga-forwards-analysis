@@ -1,64 +1,64 @@
 player,team,position,career_goals,total_seasons,la_liga_titles,cl_titles,ballon_dor_wins
-Luis Suárez,Barcelona,,40,1,1,0,1
 Cristiano Ronaldo,Real Madrid,,40,1,0,0,5
+Luis Suárez,Barcelona,,40,1,1,0,1
 Baltazar,Atlético Madrid,,35,1,0,0,0
-Lionel Messi,Barcelona,,34,1,1,0,8
 Ronaldo,Barcelona,,34,1,0,0,2
+Lionel Messi,Barcelona,,34,1,1,0,8
 Mariano Martín,Barcelona,,32,1,0,0,0
 Kylian Mbappé,Real Madrid,,31,1,0,0,0
 Juan Antonio Pizzi,Tenerife,,31,1,0,0,0
-Romário,Barcelona,,30,1,1,0,0
 Pruden,Atlético Madrid,,30,1,0,0,0
-Bebeto,Deportivo La Coruña,,29,1,0,0,0
-Hans Krankl,Barcelona,,29,1,0,0,0
+Romário,Barcelona,,30,1,1,0,0
 Roy Makaay,Deportivo La Coruña,,29,1,0,0,0
-Juan Arza,Sevilla,,28,1,0,0,0
-César,Barcelona,,28,1,1,0,0
+Hans Krankl,Barcelona,,29,1,0,0,0
+Bebeto,Deportivo La Coruña,,29,1,0,0,0
 Iván Zamorano,Real Madrid,,28,1,1,0,0
+César,Barcelona,,28,1,1,0,0
+Juan Arza,Sevilla,,28,1,0,0,0
 Bata,Athletic Club,,27,1,1,0,0
+Isidro Lángara,Oviedo,,27,1,0,0,0
+Manolo,Atlético Madrid,,27,1,0,0,0
+Dani Güiza,Mallorca,,27,1,0,0,0
+Alfredo Di Stéfano,Real Madrid,,27,1,1,0,2
 Mundo,Valencia,,27,1,1,0,0
 Salva,Racing Santander,,27,1,0,0,0
-Alfredo Di Stéfano,Real Madrid,,27,1,1,0,2
-Isidro Lángara,Oviedo,,27,1,0,0,0
 Karim Benzema,Real Madrid,,27,1,1,0,1
-Dani Güiza,Mallorca,,27,1,0,0,0
-Manolo,Atlético Madrid,,27,1,0,0,0
-Samuel Eto'o,Barcelona,,26,1,1,0,0
 Ferenc Puskás,Real Madrid,,26,1,0,0,0
-Diego Forlán,Villarreal,,25,1,0,0,0
+Samuel Eto'o,Barcelona,,26,1,1,0,0
+Raúl,Real Madrid,,25,1,0,0,0
 Juan Seminario,Zaragoza,,25,1,0,0,0
 Cayetano Ré,Barcelona,,25,1,0,0,0
+Diego Forlán,Villarreal,,25,1,0,0,0
 Ruud van Nistelrooy,Real Madrid,,25,1,1,0,0
-Raúl,Real Madrid,,25,1,0,0,0
+Artem Dovbyk,Girona,,24,1,0,0,0
 Mario Kempes,Valencia,,24,1,0,0,0
 Waldo,Valencia,,24,1,0,0,0
-Artem Dovbyk,Girona,,24,1,0,0,0
 Christian Vieri,Atlético Madrid,,24,1,0,0,0
 Pahiño,Celta Vigo,,23,1,0,0,0
 Robert Lewandowski,Barcelona,,23,1,1,0,0
 Fidel Uriarte,Athletic Club,,22,1,0,0,0
 Diego Tristán,Deportivo La Coruña,,21,1,0,0,0
+Victorio Unamuno,Athletic Club,,20,1,0,0,0
 Enrique Porta,Granada,,20,1,0,0,0
 Poli Rincón,Real Betis,,20,1,0,0,0
-Victorio Unamuno,Athletic Club,,20,1,0,0,0
 Quini,Sporting Gijón,,20,1,0,0,0
-Emilio Butragueño,Real Madrid,,19,1,0,0,0
-Carlos,Athletic Club,,19,1,0,0,0
-Marianín,Oviedo,,19,1,0,0,0
-Ricardo Alós,Valencia,,19,1,0,0,0
-Manuel Badenes,Valladolid,,19,1,0,0,0
-Vavá II,Elche,,19,1,0,0,0
-Telmo Zarra,Athletic Club,,19,1,0,0,0
 Guillermo Gorostiza,Athletic Club,,19,1,1,0,0
 Hugo Sánchez,Atlético Madrid,,19,1,0,0,0
-Jorge da Silva,Valladolid,,17,1,0,0,0
+Emilio Butragueño,Real Madrid,,19,1,0,0,0
+Marianín,Oviedo,,19,1,0,0,0
+Carlos,Athletic Club,,19,1,0,0,0
+Ricardo Alós,Valencia,,19,1,0,0,0
+Vavá II,Elche,,19,1,0,0,0
+Telmo Zarra,Athletic Club,,19,1,0,0,0
+Manuel Badenes,Valladolid,,19,1,0,0,0
 Carles Rexach,Barcelona,,17,1,0,0,0
 Juanito,Real Madrid,,17,1,0,0,0
+Jorge da Silva,Valladolid,,17,1,0,0,0
 Manuel Olivares,Real Madrid,,16,1,0,0,0
 Luis Aragonés,Atlético Madrid,,16,1,1,0,0
-José Eulogio Gárate,Atlético Madrid,,14,1,0,0,0
-Amancio,Real Madrid,,14,1,1,0,0
 Paco Bienzobas,Real Sociedad,,14,1,0,0,0
+Amancio,Real Madrid,,14,1,1,0,0
+José Eulogio Gárate,Atlético Madrid,,14,1,0,0,0
 Stanley Matthews,Blackpool,,0,0,0,0,1
 Raymond Kopa,Real Madrid,,0,0,0,0,1
 Billy Wright,Wolverhampton Wanderers,,0,0,0,0,0
@@ -164,3 +164,4 @@ Jude Bellingham,Real Madrid,,0,0,0,0,0
 Ousmane Dembélé,Paris Saint-Germain,,0,0,0,0,1
 Lamine Yamal,Barcelona,,0,0,0,0,0
 Vitinha,Paris Saint-Germain,,0,0,0,0,0
+To be announced on 26 October 2026,,,0,0,0,0,1
